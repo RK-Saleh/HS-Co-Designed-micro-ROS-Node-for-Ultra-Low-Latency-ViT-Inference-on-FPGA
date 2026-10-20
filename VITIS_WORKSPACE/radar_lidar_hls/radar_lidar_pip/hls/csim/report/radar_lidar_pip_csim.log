@@ -1,0 +1,15 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch CLANG as the compiler.
+   Compiling D:/ViT/hls_vit_export/radar_lidar_pip_tb.cpp in debug mode
+   Compiling D:/ViT/hls_vit_export/radar_lidar_pip.cpp in debug mode
+   Generating csim.exe
+--- Starting Vitis HLS C-Simulation for radar_lidar_pip ---
+[PASS] radar_lidar_pip Output Packet Received!
+  -> Alert Class (2=Emergency Brake) : 2
+  -> Confidence (Q15)                : 32000
+  -> Nearest Obstacle Distance (cm)  : 1850
+  -> Relative Velocity (dm/s)        : -280
+  -> Fallback TUSER Flag             : 1
+INFO [HLS SIM]: The maximum depth reached by any hls::stream() instance in the design is 32
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

@@ -1,0 +1,35 @@
+F:\Thesis\VITIS_WORKSPACE\vit_eng_hls\vit_eng\hls\.autopilot\db\vit_eng.pp.0.cpp:2254:5: warning: Added loop label VITIS_LOOP_676_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high+1; ++i) {
+    ^~~
+    VITIS_LOOP_676_1: 
+F:\Thesis\VITIS_WORKSPACE\vit_eng_hls\vit_eng\hls\.autopilot\db\vit_eng.pp.0.cpp:2254:5: note: FIX-IT applied suggested code changes
+F:\Thesis\VITIS_WORKSPACE\vit_eng_hls\vit_eng\hls\.autopilot\db\vit_eng.pp.0.cpp:2268:5: warning: Added loop label VITIS_LOOP_690_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high+1; ++i) {
+    ^~~
+    VITIS_LOOP_690_1: 
+F:\Thesis\VITIS_WORKSPACE\vit_eng_hls\vit_eng\hls\.autopilot\db\vit_eng.pp.0.cpp:2268:5: note: FIX-IT applied suggested code changes
+F:\Thesis\VITIS_WORKSPACE\vit_eng_hls\vit_eng\hls\.autopilot\db\vit_eng.pp.0.cpp:2282:5: warning: Added loop label VITIS_LOOP_704_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high+1; ++i) {
+    ^~~
+    VITIS_LOOP_704_1: 
+F:\Thesis\VITIS_WORKSPACE\vit_eng_hls\vit_eng\hls\.autopilot\db\vit_eng.pp.0.cpp:2282:5: note: FIX-IT applied suggested code changes
+F:\Thesis\VITIS_WORKSPACE\vit_eng_hls\vit_eng\hls\.autopilot\db\vit_eng.pp.0.cpp:4250:7: warning: Added loop label VITIS_LOOP_1248_1:   [xilinx-label-all-loops]
+      for (i = 0; i < __N - 1; ++i) {
+      ^~~
+      VITIS_LOOP_1248_1: 
+F:\Thesis\VITIS_WORKSPACE\vit_eng_hls\vit_eng\hls\.autopilot\db\vit_eng.pp.0.cpp:4250:7: note: FIX-IT applied suggested code changes
+F:\Thesis\VITIS_WORKSPACE\vit_eng_hls\vit_eng\hls\.autopilot\db\vit_eng.pp.0.cpp:10318:13: warning: Added loop label VITIS_LOOP_45_1:   [xilinx-label-all-loops]
+            for (int k = 0; k < 8; k++) {
+            ^~~
+            VITIS_LOOP_45_1: 
+F:\Thesis\VITIS_WORKSPACE\vit_eng_hls\vit_eng\hls\.autopilot\db\vit_eng.pp.0.cpp:10318:13: note: FIX-IT applied suggested code changes
+F:\Thesis\VITIS_WORKSPACE\vit_eng_hls\vit_eng\hls\.autopilot\db\vit_eng.pp.0.cpp:10329:2: warning: Added loop label VITIS_LOOP_56_2:   [xilinx-label-all-loops]
+ for (int k = 0; k < 8; k++) {
+ ^~~
+ VITIS_LOOP_56_2: 
+F:\Thesis\VITIS_WORKSPACE\vit_eng_hls\vit_eng\hls\.autopilot\db\vit_eng.pp.0.cpp:10329:2: note: FIX-IT applied suggested code changes
+F:\Thesis\VITIS_WORKSPACE\vit_eng_hls\vit_eng\hls\.autopilot\db\vit_eng.pp.0.cpp:10349:2: warning: Added loop label VITIS_LOOP_76_3:   [xilinx-label-all-loops]
+ for (int k = 0; k < 8; k++) {
+ ^~~
+ VITIS_LOOP_76_3: 
+F:\Thesis\VITIS_WORKSPACE\vit_eng_hls\vit_eng\hls\.autopilot\db\vit_eng.pp.0.cpp:10349:2: note: FIX-IT applied suggested code changes

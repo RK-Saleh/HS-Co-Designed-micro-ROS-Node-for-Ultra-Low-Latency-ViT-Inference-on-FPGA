@@ -1,0 +1,156 @@
+<ENTRY>
+{
+ "thisFile": "F:/Thesis\\VITIS_WORKSPACE\\micro_ros_hls\\micro_ros_hw\\micro_ros_hw.hlsrun_csim_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "10/15/26 21:20:28",
+ "timestampMillis": "1792092028580",
+ "buildStep": {
+  "cmdId": "bf2341b3-e78b-4135-a293-18efe931345e",
+  "name": "vitis-run",
+  "logFile": "F:/Thesis\\VITIS_WORKSPACE\\micro_ros_hls\\micro_ros_hw\\logs\\micro_ros_hw.steps.log",
+  "commandLine": "D:/Xilinx/2025.1/Vitis/bin/unwrapped/win64.o/vitis-run.exe  --mode hls --csim --config F:\\Thesis\\VITIS_WORKSPACE\\micro_ros_hls\\hls_config.cfg --work_dir micro_ros_hw ",
+  "args": [
+   "--mode",
+   "hls",
+   "--csim",
+   "--config",
+   "F:\\Thesis\\VITIS_WORKSPACE\\micro_ros_hls\\hls_config.cfg",
+   "--work_dir",
+   "micro_ros_hw"
+  ],
+  "iniFiles": [],
+  "cwd": "F:\\Thesis\\VITIS_WORKSPACE\\micro_ros_hls"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "10/15/26 21:20:28",
+ "timestampMillis": "1792092028580",
+ "status": {
+  "cmdId": "bf2341b3-e78b-4135-a293-18efe931345e",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "10/15/26 21:20:31",
+ "timestampMillis": "1792092031942",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_C_SIM",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "micro_ros_hw",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "D:/ViT\\hls_vit_export\\micro_ros_hw.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2025.1"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "10/15/26 21:20:31",
+ "timestampMillis": "1792092031944",
+ "buildStep": {
+  "cmdId": "9f3b8075-ab65-4d24-b552-b4e9572e882c",
+  "name": "",
+  "logFile": "F:/Thesis\\VITIS_WORKSPACE\\micro_ros_hls\\micro_ros_hw\\hls\\hls.log",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "F:\\Thesis\\VITIS_WORKSPACE\\micro_ros_hls"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "10/15/26 21:20:31",
+ "timestampMillis": "1792092031944",
+ "status": {
+  "cmdId": "9f3b8075-ab65-4d24-b552-b4e9572e882c",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "10/15/26 21:20:32",
+ "timestampMillis": "1792092032790",
+ "status": {
+  "cmdId": "9f3b8075-ab65-4d24-b552-b4e9572e882c",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "10/15/26 21:20:32",
+ "timestampMillis": "1792092032933",
+ "status": {
+  "cmdId": "bf2341b3-e78b-4135-a293-18efe931345e",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "10/15/26 21:20:32",
+ "timestampMillis": "1792092032935",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "10/15/26 21:20:32",
+ "timestampMillis": "1792092032935",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

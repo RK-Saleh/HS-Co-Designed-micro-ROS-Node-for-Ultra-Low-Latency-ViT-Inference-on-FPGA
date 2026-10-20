@@ -1,0 +1,27 @@
+[
+  {
+    "directory": "F:\\Thesis\\VITIS_WORKSPACE\\micro_ros_hls",
+    "arguments": [
+      "D:\\Xilinx\\2025.1\\Vitis\\vcxx\\libexec\\clang++.exe",
+      "--sysroot=D:\\Xilinx\\2025.1\\Vitis\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "-fhls",
+      "-hls-syn-headers-dir=D:\\Xilinx\\2025.1\\Vitis\\common\\technology\\autopilot",
+      "-fhlstoplevel=micro_ros_hw",
+      "-c",
+      "D:/ViT/hls_vit_export/micro_ros_hw.cpp"
+    ],
+    "file": "D:/ViT/hls_vit_export/micro_ros_hw.cpp"
+  },
+  {
+    "directory": "F:\\Thesis\\VITIS_WORKSPACE\\micro_ros_hls",
+    "arguments": [
+      "D:\\Xilinx\\2025.1\\Vitis\\vcxx\\libexec\\clang++.exe",
+      "--sysroot=D:\\Xilinx\\2025.1\\Vitis\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "-fhls-tb",
+      "-hls-sim-headers-dir=D:\\Xilinx\\2025.1\\Vitis\\include",
+      "-c",
+      "D:/ViT/hls_vit_export/micro_ros_hw_tb.cpp"
+    ],
+    "file": "D:/ViT/hls_vit_export/micro_ros_hw_tb.cpp"
+  }
+]

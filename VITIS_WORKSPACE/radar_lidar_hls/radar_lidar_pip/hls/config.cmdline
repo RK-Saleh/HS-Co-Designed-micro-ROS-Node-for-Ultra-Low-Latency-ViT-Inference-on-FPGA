@@ -1,0 +1,3 @@
+relativeroot=F:/Thesis/VITIS_WORKSPACE/radar_lidar_hls
+original_argv=--mode hls --package --config F:\Thesis\VITIS_WORKSPACE\radar_lidar_hls\hls_config.cfg --work_dir radar_lidar_pip 
+

@@ -1,0 +1,255 @@
+  **** HLS Build v2025.1 6135595
+INFO: [HLS 200-2005] Using work_dir F:/Thesis/VITIS_WORKSPACE/vit_eng_hls/vit_eng 
+INFO: [HLS 200-2176] Writing Vitis IDE component file F:/Thesis/VITIS_WORKSPACE/vit_eng_hls/vit_eng/vitis-comp.json
+INFO: [HLS 200-10] Creating and opening component 'F:/Thesis/VITIS_WORKSPACE/vit_eng_hls/vit_eng'.
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-2174] Applying component config ini file F:/Thesis/VITIS_WORKSPACE/vit_eng_hls/hls_config.cfg
+INFO: [HLS 200-1465] Applying config ini 'syn.file=D:/ViT/hls_vit_export/vit_eng.cpp' from F:/Thesis/VITIS_WORKSPACE/vit_eng_hls/hls_config.cfg(8)
+INFO: [HLS 200-10] Adding design file 'D:/ViT/hls_vit_export/vit_eng.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=D:/ViT/hls_vit_export/vit_weights_layer0.h' from F:/Thesis/VITIS_WORKSPACE/vit_eng_hls/hls_config.cfg(9)
+INFO: [HLS 200-10] Adding design file 'D:/ViT/hls_vit_export/vit_weights_layer0.h' to the project
+INFO: [HLS 200-1465] Applying config ini 'tb.file=D:/ViT/hls_vit_export/vit_eng_tb.cpp' from F:/Thesis/VITIS_WORKSPACE/vit_eng_hls/hls_config.cfg(10)
+INFO: [HLS 200-10] Adding test bench file 'D:/ViT/hls_vit_export/vit_eng_tb.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.top=vit_eng' from F:/Thesis/VITIS_WORKSPACE/vit_eng_hls/hls_config.cfg(7)
+INFO: [HLS 200-1465] Applying config ini 'flow_target=vivado' from F:/Thesis/VITIS_WORKSPACE/vit_eng_hls/hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying config ini 'part=xck26-sfvc784-2LV-c' from F:/Thesis/VITIS_WORKSPACE/vit_eng_hls/hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xck26-sfvc784-2LV-c'
+INFO: [HLS 200-1465] Applying config ini 'clock=5ns' from F:/Thesis/VITIS_WORKSPACE/vit_eng_hls/hls_config.cfg(11)
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 5ns.
+INFO: [HLS 200-1465] Applying config ini 'package.output.format=ip_catalog' from F:/Thesis/VITIS_WORKSPACE/vit_eng_hls/hls_config.cfg(5)
+INFO: [HLS 200-2176] Writing Vitis IDE component file F:/Thesis/VITIS_WORKSPACE/vit_eng_hls/vit_eng/vitis-comp.json
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 1 seconds. CPU system time: 3 seconds. Elapsed time: 10.77 seconds; current allocated memory: 151.453 MB.
+INFO: [HLS 200-10] Analyzing design file 'D:/ViT/hls_vit_export/vit_eng.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 43.255 seconds; current allocated memory: 154.414 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-1995] There were 2,736 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details (F:/Thesis/VITIS_WORKSPACE/vit_eng_hls/vit_eng/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 753 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details (F:/Thesis/VITIS_WORKSPACE/vit_eng_hls/vit_eng/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 611 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details (F:/Thesis/VITIS_WORKSPACE/vit_eng_hls/vit_eng/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 555 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details (F:/Thesis/VITIS_WORKSPACE/vit_eng_hls/vit_eng/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 555 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details (F:/Thesis/VITIS_WORKSPACE/vit_eng_hls/vit_eng/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 1,842 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details (F:/Thesis/VITIS_WORKSPACE/vit_eng_hls/vit_eng/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 827 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details (F:/Thesis/VITIS_WORKSPACE/vit_eng_hls/vit_eng/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 827 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details (F:/Thesis/VITIS_WORKSPACE/vit_eng_hls/vit_eng/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 827 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details (F:/Thesis/VITIS_WORKSPACE/vit_eng_hls/vit_eng/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 883 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details (F:/Thesis/VITIS_WORKSPACE/vit_eng_hls/vit_eng/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 885 instructions in the design after the 'Performance (step 1)' phase of compilation. See the Design Size Report for more details (F:/Thesis/VITIS_WORKSPACE/vit_eng_hls/vit_eng/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 877 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details (F:/Thesis/VITIS_WORKSPACE/vit_eng_hls/vit_eng/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 972 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details (F:/Thesis/VITIS_WORKSPACE/vit_eng_hls/vit_eng/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 828 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details (F:/Thesis/VITIS_WORKSPACE/vit_eng_hls/vit_eng/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 811 instructions in the design after the 'HW Transforms (step 1)' phase of compilation. See the Design Size Report for more details (F:/Thesis/VITIS_WORKSPACE/vit_eng_hls/vit_eng/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 790 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details (F:/Thesis/VITIS_WORKSPACE/vit_eng_hls/vit_eng/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_76_3' is marked as complete unroll implied by the pipeline pragma (D:/ViT/hls_vit_export/vit_eng.cpp:76:19)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_56_2' is marked as complete unroll implied by the pipeline pragma (D:/ViT/hls_vit_export/vit_eng.cpp:56:19)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_45_1' is marked as complete unroll implied by the pipeline pragma (D:/ViT/hls_vit_export/vit_eng.cpp:45:30)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_76_3' (D:/ViT/hls_vit_export/vit_eng.cpp:76:19) in function 'vit_eng' completely with a factor of 8 (D:/ViT/hls_vit_export/vit_eng.cpp:15:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_56_2' (D:/ViT/hls_vit_export/vit_eng.cpp:56:19) in function 'vit_eng' completely with a factor of 8 (D:/ViT/hls_vit_export/vit_eng.cpp:15:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_45_1' (D:/ViT/hls_vit_export/vit_eng.cpp:45:30) in function 'vit_eng' completely with a factor of 8 (D:/ViT/hls_vit_export/vit_eng.cpp:15:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL9W_PROJ_L0': Cyclic partitioning with factor 8 on dimension 2. (D:/ViT/hls_vit_export/vit_weights_layer0.h:25:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL10W_VALUE_L0': Cyclic partitioning with factor 8 on dimension 2. (D:/ViT/hls_vit_export/vit_weights_layer0.h:21:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL8W_KEY_L0': Cyclic partitioning with factor 8 on dimension 2. (D:/ViT/hls_vit_export/vit_weights_layer0.h:17:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL10W_QUERY_L0': Cyclic partitioning with factor 8 on dimension 2. (D:/ViT/hls_vit_export/vit_weights_layer0.h:13:0)
+INFO: [HLS 214-248] Applying array_partition to 'token_in': Cyclic partitioning with factor 8 on dimension 1. (D:/ViT/hls_vit_export/vit_eng.cpp:21:8)
+INFO: [HLS 214-248] Applying array_partition to 'q_vec': Cyclic partitioning with factor 8 on dimension 1. (D:/ViT/hls_vit_export/vit_eng.cpp:22:11)
+INFO: [HLS 214-248] Applying array_partition to 'k_vec': Cyclic partitioning with factor 8 on dimension 1. (D:/ViT/hls_vit_export/vit_eng.cpp:23:11)
+INFO: [HLS 214-248] Applying array_partition to 'v_vec': Cyclic partitioning with factor 8 on dimension 1. (D:/ViT/hls_vit_export/vit_eng.cpp:24:11)
+INFO: [HLS 214-248] Applying array_partition to 'attn_out': Cyclic partitioning with factor 8 on dimension 1. (D:/ViT/hls_vit_export/vit_eng.cpp:25:11)
+INFO: [HLS 214-449] Automatically partitioning array 'attn_out' dimension 1 completely based on constant index. (D:/ViT/hls_vit_export/vit_eng.cpp:25:11)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'attn_out_2' due to pipeline pragma (D:/ViT/hls_vit_export/vit_eng.cpp:25:11)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'attn_out_3' due to pipeline pragma (D:/ViT/hls_vit_export/vit_eng.cpp:25:11)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'attn_out_4' due to pipeline pragma (D:/ViT/hls_vit_export/vit_eng.cpp:25:11)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'attn_out_5' due to pipeline pragma (D:/ViT/hls_vit_export/vit_eng.cpp:25:11)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'attn_out_6' due to pipeline pragma (D:/ViT/hls_vit_export/vit_eng.cpp:25:11)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'attn_out_7' due to pipeline pragma (D:/ViT/hls_vit_export/vit_eng.cpp:25:11)
+INFO: [HLS 214-248] Applying array_partition to 'attn_out_2': Complete partitioning on dimension 1. (D:/ViT/hls_vit_export/vit_eng.cpp:25:11)
+INFO: [HLS 214-248] Applying array_partition to 'attn_out_3': Complete partitioning on dimension 1. (D:/ViT/hls_vit_export/vit_eng.cpp:25:11)
+INFO: [HLS 214-248] Applying array_partition to 'attn_out_4': Complete partitioning on dimension 1. (D:/ViT/hls_vit_export/vit_eng.cpp:25:11)
+INFO: [HLS 214-248] Applying array_partition to 'attn_out_5': Complete partitioning on dimension 1. (D:/ViT/hls_vit_export/vit_eng.cpp:25:11)
+INFO: [HLS 214-248] Applying array_partition to 'attn_out_6': Complete partitioning on dimension 1. (D:/ViT/hls_vit_export/vit_eng.cpp:25:11)
+INFO: [HLS 214-248] Applying array_partition to 'attn_out_7': Complete partitioning on dimension 1. (D:/ViT/hls_vit_export/vit_eng.cpp:25:11)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 25.726 seconds; current allocated memory: 156.379 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.003 seconds; current allocated memory: 156.379 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.149 seconds; current allocated memory: 164.695 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.097 seconds; current allocated memory: 166.574 MB.
+INFO: [XFORM 203-11] Balancing expressions in function 'vit_eng' (D:/ViT/hls_vit_export/vit_eng.cpp:11:23)...32 expression(s) balanced.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.294 seconds; current allocated memory: 190.371 MB.
+WARNING: [HLS 200-960] Cannot flatten loop 'qkv_row_loop' (D:/ViT/hls_vit_export/vit_eng.cpp:52:23) in function 'vit_eng' the outer loop is not a perfect loop because there is nontrivial logic before entering the inner loop.
+Resolution: For help on HLS 200-960 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-960.html
+WARNING: [HLS 200-960] Cannot flatten loop 'proj_row_loop' (D:/ViT/hls_vit_export/vit_eng.cpp:72:24) in function 'vit_eng' the outer loop is not a perfect loop because there is nontrivial logic before entering the inner loop.
+Resolution: For help on HLS 200-960 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-960.html
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.314 seconds; current allocated memory: 212.598 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'vit_eng' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'vit_eng_Pipeline_stream_in_loop' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'stream_in_loop'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'stream_in_loop'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.224 seconds; current allocated memory: 216.227 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.034 seconds; current allocated memory: 217.324 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'vit_eng_Pipeline_qkv_tile_loop' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln61_4) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln61_3) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln61_1) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln61) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln60_4) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln60_3) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln60_1) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln60) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln59_4) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln59_3) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln59_1) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln59) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining loop 'qkv_tile_loop'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 6, loop 'qkv_tile_loop'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.163 seconds; current allocated memory: 219.531 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 219.754 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'vit_eng_Pipeline_proj_tile_loop' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln79_4) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln79_3) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln79_1) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln79) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln78_7) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln78_6) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln78_5) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln78_4) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln78_3) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln78_2) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln78_1) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln78) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining loop 'proj_tile_loop'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 9, loop 'proj_tile_loop'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.123 seconds; current allocated memory: 220.812 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.047 seconds; current allocated memory: 221.203 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'vit_eng' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.127 seconds; current allocated memory: 222.875 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.049 seconds; current allocated memory: 223.215 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'vit_eng_Pipeline_stream_in_loop' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'vit_eng_Pipeline_stream_in_loop' pipeline 'stream_in_loop' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'vit_eng_Pipeline_stream_in_loop'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.619 seconds; current allocated memory: 225.223 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'vit_eng_Pipeline_qkv_tile_loop' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'vit_eng_Pipeline_qkv_tile_loop' pipeline 'qkv_tile_loop' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_8s_7s_15s_15_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_8s_7s_16s_16_4_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_8s_8s_16s_16_4_1': 9 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_8s_8s_15_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_8s_8s_16_1_1': 11 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'vit_eng_Pipeline_qkv_tile_loop'.
+INFO: [RTMG 210-279] Implementing memory 'vit_eng_vit_eng_Pipeline_qkv_tile_loop_p_ZL10W_QUERY_L0_0_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'vit_eng_vit_eng_Pipeline_qkv_tile_loop_p_ZL8W_KEY_L0_0_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'vit_eng_vit_eng_Pipeline_qkv_tile_loop_p_ZL10W_VALUE_L0_0_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'vit_eng_vit_eng_Pipeline_qkv_tile_loop_p_ZL10W_QUERY_L0_1_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'vit_eng_vit_eng_Pipeline_qkv_tile_loop_p_ZL8W_KEY_L0_1_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'vit_eng_vit_eng_Pipeline_qkv_tile_loop_p_ZL10W_VALUE_L0_1_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'vit_eng_vit_eng_Pipeline_qkv_tile_loop_p_ZL10W_QUERY_L0_2_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'vit_eng_vit_eng_Pipeline_qkv_tile_loop_p_ZL8W_KEY_L0_2_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'vit_eng_vit_eng_Pipeline_qkv_tile_loop_p_ZL10W_VALUE_L0_2_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'vit_eng_vit_eng_Pipeline_qkv_tile_loop_p_ZL10W_QUERY_L0_3_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'vit_eng_vit_eng_Pipeline_qkv_tile_loop_p_ZL8W_KEY_L0_3_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'vit_eng_vit_eng_Pipeline_qkv_tile_loop_p_ZL10W_VALUE_L0_3_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'vit_eng_vit_eng_Pipeline_qkv_tile_loop_p_ZL10W_QUERY_L0_4_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'vit_eng_vit_eng_Pipeline_qkv_tile_loop_p_ZL8W_KEY_L0_4_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'vit_eng_vit_eng_Pipeline_qkv_tile_loop_p_ZL10W_VALUE_L0_4_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'vit_eng_vit_eng_Pipeline_qkv_tile_loop_p_ZL10W_QUERY_L0_5_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'vit_eng_vit_eng_Pipeline_qkv_tile_loop_p_ZL8W_KEY_L0_5_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'vit_eng_vit_eng_Pipeline_qkv_tile_loop_p_ZL10W_VALUE_L0_5_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'vit_eng_vit_eng_Pipeline_qkv_tile_loop_p_ZL10W_QUERY_L0_6_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'vit_eng_vit_eng_Pipeline_qkv_tile_loop_p_ZL8W_KEY_L0_6_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'vit_eng_vit_eng_Pipeline_qkv_tile_loop_p_ZL10W_VALUE_L0_6_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'vit_eng_vit_eng_Pipeline_qkv_tile_loop_p_ZL10W_QUERY_L0_7_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'vit_eng_vit_eng_Pipeline_qkv_tile_loop_p_ZL8W_KEY_L0_7_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'vit_eng_vit_eng_Pipeline_qkv_tile_loop_p_ZL10W_VALUE_L0_7_ROM_AUTO_1R' using auto ROMs.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 1 seconds. Elapsed time: 1.983 seconds; current allocated memory: 230.246 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'vit_eng_Pipeline_proj_tile_loop' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'vit_eng_Pipeline_proj_tile_loop' pipeline 'proj_tile_loop' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_8s_8s_16s_16_4_1': 4 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_8s_8s_8s_12_4_1': 8 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_8s_8s_16_1_1': 4 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'vit_eng_Pipeline_proj_tile_loop'.
+INFO: [RTMG 210-279] Implementing memory 'vit_eng_vit_eng_Pipeline_proj_tile_loop_p_ZL9W_PROJ_L0_0_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'vit_eng_vit_eng_Pipeline_proj_tile_loop_p_ZL9W_PROJ_L0_1_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'vit_eng_vit_eng_Pipeline_proj_tile_loop_p_ZL9W_PROJ_L0_2_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'vit_eng_vit_eng_Pipeline_proj_tile_loop_p_ZL9W_PROJ_L0_3_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'vit_eng_vit_eng_Pipeline_proj_tile_loop_p_ZL9W_PROJ_L0_4_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'vit_eng_vit_eng_Pipeline_proj_tile_loop_p_ZL9W_PROJ_L0_5_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'vit_eng_vit_eng_Pipeline_proj_tile_loop_p_ZL9W_PROJ_L0_6_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'vit_eng_vit_eng_Pipeline_proj_tile_loop_p_ZL9W_PROJ_L0_7_ROM_AUTO_1R' using auto ROMs.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.387 seconds; current allocated memory: 235.195 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'vit_eng' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'vit_eng/s_axis_img_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'vit_eng/s_axis_img_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'vit_eng/s_axis_img_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'vit_eng/s_axis_img_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'vit_eng/s_axis_img_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'vit_eng/s_axis_img_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'vit_eng/s_axis_img_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'vit_eng/m_axis_det_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'vit_eng/m_axis_det_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'vit_eng/m_axis_det_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'vit_eng/m_axis_det_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'vit_eng/m_axis_det_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'vit_eng/m_axis_det_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'vit_eng/m_axis_det_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'vit_eng/heartbeat_pulse' to 'ap_none'.
+WARNING: [RTGEN 206-101] Port 'heartbeat_pulse' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port.
+INFO: [RTGEN 206-500] Setting interface mode on function 'vit_eng' to 'ap_ctrl_none'.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'vit_eng'.
+INFO: [RTMG 210-278] Implementing memory 'vit_eng_token_in_RAM_AUTO_1R1W' using auto RAMs.
+INFO: [RTMG 210-278] Implementing memory 'vit_eng_attn_out_1_RAM_AUTO_1R1W' using auto RAMs.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.681 seconds; current allocated memory: 240.566 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.954 seconds; current allocated memory: 247.766 MB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.463 seconds; current allocated memory: 252.629 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for vit_eng.
+INFO: [VLOG 209-307] Generating Verilog RTL for vit_eng.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 283.13 MHz
+INFO: [HLS 200-112] Total CPU user time: 4 seconds. Total CPU system time: 4 seconds. Total elapsed time: 93.278 seconds; peak allocated memory: 252.672 MB.
+INFO: [v++ 60-791] Total elapsed time: 0h 1m 37s

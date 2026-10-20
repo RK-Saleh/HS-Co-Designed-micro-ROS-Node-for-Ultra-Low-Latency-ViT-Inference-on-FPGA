@@ -1,0 +1,9 @@
+{
+	"version": "1.0",
+	"modules": {
+		"micro_ros_hw": {
+			"proto_instances": {
+			}
+		}
+	}
+}

@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "F:/Thesis/VIVADO_Project/kr260_fault_tolerant_vit/kr260_fault_tolerant_vit.srcs/sources_1/imports/hls_vit_export/fault_tolerant_mux_subsystem.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'fault_tolerant_mux_subsystem'
+INFO: [VRFC 10-163] Analyzing VHDL file "F:/Thesis/VIVADO_Project/kr260_fault_tolerant_vit/kr260_fault_tolerant_vit.srcs/sources_1/imports/hls_vit_export/tb_fault_tolerant_mux.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_fault_tolerant_mux'

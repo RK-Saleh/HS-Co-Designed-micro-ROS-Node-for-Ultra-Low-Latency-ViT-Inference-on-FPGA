@@ -1,0 +1,154 @@
+In file included from D:\ViT\hls_vit_export\micro_ros_hw.cpp:2:
+In file included from D:/Xilinx/2025.1/Vitis/common/technology/autopilot\ap_axi_sdata.h:17:
+In file included from C:\Program Files (x86)\Microsoft Visual Studio\18\BuildTools\VC\Tools\MSVC\14.51.36231\include\cassert:7:
+C:\Program Files (x86)\Microsoft Visual Studio\18\BuildTools\VC\Tools\MSVC\14.51.36231\include\yvals_core.h:917:1: error: static_assert failed "error STL1000: Unexpected compiler version, expected Clang 20 or newer."
+_EMIT_STL_ERROR(STL1000, "Unexpected compiler version, expected Clang 20 or newer.");
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Program Files (x86)\Microsoft Visual Studio\18\BuildTools\VC\Tools\MSVC\14.51.36231\include\yvals_core.h:533:44: note: expanded from macro '_EMIT_STL_ERROR'
+#define _EMIT_STL_ERROR(NUMBER, MESSAGE)   static_assert(false, "error " #NUMBER ": " MESSAGE)
+                                           ^             ~~~~~
+In file included from D:\ViT\hls_vit_export\micro_ros_hw.cpp:2:
+In file included from D:/Xilinx/2025.1/Vitis/common/technology/autopilot\ap_axi_sdata.h:20:
+In file included from C:\Program Files (x86)\Microsoft Visual Studio\18\BuildTools\VC\Tools\MSVC\14.51.36231\include\type_traits:10:
+In file included from C:\Program Files (x86)\Microsoft Visual Studio\18\BuildTools\VC\Tools\MSVC\14.51.36231\include\cstddef:12:
+C:\Program Files (x86)\Microsoft Visual Studio\18\BuildTools\VC\Tools\MSVC\14.51.36231\include\xtr1common:180:12: error: use of undeclared identifier '__builtin_is_constant_evaluated'; did you mean '_Is_constant_evaluated'?
+    return __builtin_is_constant_evaluated();
+           ^
+C:\Program Files (x86)\Microsoft Visual Studio\18\BuildTools\VC\Tools\MSVC\14.51.36231\include\xtr1common:179:27: note: '_Is_constant_evaluated' declared here
+_NODISCARD constexpr bool _Is_constant_evaluated() noexcept { // Internal function for any standard mode
+                          ^
+In file included from D:\ViT\hls_vit_export\micro_ros_hw.cpp:2:
+In file included from D:/Xilinx/2025.1/Vitis/common/technology/autopilot\ap_axi_sdata.h:20:
+C:\Program Files (x86)\Microsoft Visual Studio\18\BuildTools\VC\Tools\MSVC\14.51.36231\include\type_traits:1256:5: error: static_assert failed "You've instantiated std::aligned_storage<Len, Align> with an extended alignment (in other words, Align > alignof(max_align_t)). Before VS 2017 15.8, the member \"type\" would non-conformingly have an alignment of only alignof(max_align_t). VS 2017 15.8 was fixed to handle this correctly, but the fix inherently changes layout and breaks binary compatibility (*only* for uses of aligned_storage with extended alignments). To suppress this error, please define either (1) _ENABLE_EXTENDED_ALIGNED_STORAGE to confirm that you want a type with an extended alignment, or (2) _DISABLE_EXTENDED_ALIGNED_STORAGE to get the old non-conforming behavior."
+    static_assert(false,
+    ^             ~~~~~
+C:\Program Files (x86)\Microsoft Visual Studio\18\BuildTools\VC\Tools\MSVC\14.51.36231\include\type_traits:1946:5: error: static_assert failed "result_of<CallableType> is invalid; use result_of<CallableType(zero or more argument types)> instead."
+    static_assert(false, "result_of<CallableType> is invalid; use "
+    ^             ~~~~~
+C:\Program Files (x86)\Microsoft Visual Studio\18\BuildTools\VC\Tools\MSVC\14.51.36231\include\type_traits:2470:30: error: overloaded 'operator()' cannot be a static member function
+    _NODISCARD static size_t operator()(const _Kty& _Keyval)
+                             ^
+C:\Program Files (x86)\Microsoft Visual Studio\18\BuildTools\VC\Tools\MSVC\14.51.36231\include\type_traits:2498:30: error: overloaded 'operator()' cannot be a static member function
+    _NODISCARD static size_t operator()(const float _Keyval) noexcept {
+                             ^
+C:\Program Files (x86)\Microsoft Visual Studio\18\BuildTools\VC\Tools\MSVC\14.51.36231\include\type_traits:2507:30: error: overloaded 'operator()' cannot be a static member function
+    _NODISCARD static size_t operator()(const double _Keyval) noexcept {
+                             ^
+C:\Program Files (x86)\Microsoft Visual Studio\18\BuildTools\VC\Tools\MSVC\14.51.36231\include\type_traits:2516:30: error: overloaded 'operator()' cannot be a static member function
+    _NODISCARD static size_t operator()(const long double _Keyval) noexcept {
+                             ^
+C:\Program Files (x86)\Microsoft Visual Studio\18\BuildTools\VC\Tools\MSVC\14.51.36231\include\type_traits:2525:30: error: overloaded 'operator()' cannot be a static member function
+    _NODISCARD static size_t operator()(nullptr_t) noexcept {
+                             ^
+C:\Program Files (x86)\Microsoft Visual Studio\18\BuildTools\VC\Tools\MSVC\14.51.36231\include\type_traits:2623:31: error: '_To' does not refer to a value
+    return __builtin_bit_cast(_To, _Val);
+                              ^
+C:\Program Files (x86)\Microsoft Visual Studio\18\BuildTools\VC\Tools\MSVC\14.51.36231\include\type_traits:2618:17: note: declared here
+template <class _To, class _From,
+                ^
+In file included from D:\ViT\hls_vit_export\micro_ros_hw.cpp:2:
+D:/Xilinx/2025.1/Vitis/common/technology/autopilot\ap_axi_sdata.h:333:16: error: use of undeclared identifier '__fpga_axis_valid'
+    bool tmp = __fpga_axis_valid(
+               ^
+D:\ViT\hls_vit_export\micro_ros_hw.cpp:22:22: note: in instantiation of member function 'hls::stream<hls::axis<ap_uint<64>, 1, 1, 1, '8', false>, 0>::empty' requested here
+    if (!s_axis_perc.empty()) {
+                     ^
+In file included from D:\ViT\hls_vit_export\micro_ros_hw.cpp:2:
+D:/Xilinx/2025.1/Vitis/common/technology/autopilot\ap_axi_sdata.h:362:5: error: use of undeclared identifier '__fpga_axis_pop'
+    __fpga_axis_pop(V.get_data_ptr(), V.get_keep_ptr(), V.get_strb_ptr(),
+    ^
+D:\ViT\hls_vit_export\micro_ros_hw.cpp:23:41: note: in instantiation of member function 'hls::stream<hls::axis<ap_uint<64>, 1, 1, 1, '8', false>, 0>::read' requested here
+        axis_pkt_t in_pkt = s_axis_perc.read();
+                                        ^
+In file included from D:\ViT\hls_vit_export\micro_ros_hw.cpp:1:
+In file included from D:/Xilinx/2025.1/Vitis/common/technology/autopilot/ap_int.h:12:
+D:/Xilinx/2025.1/Vitis/common/technology/autopilot\etc/ap_int_ref.h:345:3: error: template argument for template type parameter must be a type
+  ASSIGN_WITH_CTYPE(int)
+  ^~~~~~~~~~~~~~~~~~~~~~
+D:/Xilinx/2025.1/Vitis/common/technology/autopilot\etc/ap_int_ref.h:335:14: note: expanded from macro 'ASSIGN_WITH_CTYPE'
+    d_bv.V = _AP_ROOT_op_set_range(d_bv.V, l_index, h_index, tmp.V); \
+             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:/Xilinx/2025.1/Vitis/common/technology/autopilot\etc/ap_common.h:660:3: note: expanded from macro '_AP_ROOT_op_set_range'
+  _ssdm_op_set_range(Val, Lo, Hi, Repl)
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:/Xilinx/2025.1/Vitis/common/technology/autopilot\etc/ap_common.h:586:37: note: expanded from macro '_ssdm_op_set_range'
+    typename _ap_type::remove_const<typeof(Val)>::type __Result__ = 0; \
+                                    ^~~~~~~~~~~
+D:/Xilinx/2025.1/Vitis/common/technology/autopilot\etc/ap_common.h:223:20: note: template parameter is declared here
+template <typename _Tp>
+                   ^
+In file included from D:\ViT\hls_vit_export\micro_ros_hw.cpp:1:
+In file included from D:/Xilinx/2025.1/Vitis/common/technology/autopilot/ap_int.h:12:
+D:/Xilinx/2025.1/Vitis/common/technology/autopilot\etc/ap_int_ref.h:345:3: error: expected a qualified name after 'typename'
+  ASSIGN_WITH_CTYPE(int)
+  ^
+D:/Xilinx/2025.1/Vitis/common/technology/autopilot\etc/ap_int_ref.h:335:14: note: expanded from macro 'ASSIGN_WITH_CTYPE'
+    d_bv.V = _AP_ROOT_op_set_range(d_bv.V, l_index, h_index, tmp.V); \
+             ^
+D:/Xilinx/2025.1/Vitis/common/technology/autopilot\etc/ap_common.h:660:3: note: expanded from macro '_AP_ROOT_op_set_range'
+  _ssdm_op_set_range(Val, Lo, Hi, Repl)
+  ^
+D:/Xilinx/2025.1/Vitis/common/technology/autopilot\etc/ap_common.h:586:51: note: expanded from macro '_ssdm_op_set_range'
+    typename _ap_type::remove_const<typeof(Val)>::type __Result__ = 0; \
+                                                  ^
+In file included from D:\ViT\hls_vit_export\micro_ros_hw.cpp:1:
+In file included from D:/Xilinx/2025.1/Vitis/common/technology/autopilot/ap_int.h:12:
+D:/Xilinx/2025.1/Vitis/common/technology/autopilot\etc/ap_int_ref.h:345:3: error: unknown type name 'type'
+D:/Xilinx/2025.1/Vitis/common/technology/autopilot\etc/ap_int_ref.h:335:14: note: expanded from macro 'ASSIGN_WITH_CTYPE'
+    d_bv.V = _AP_ROOT_op_set_range(d_bv.V, l_index, h_index, tmp.V); \
+             ^
+D:/Xilinx/2025.1/Vitis/common/technology/autopilot\etc/ap_common.h:660:3: note: expanded from macro '_AP_ROOT_op_set_range'
+  _ssdm_op_set_range(Val, Lo, Hi, Repl)
+  ^
+D:/Xilinx/2025.1/Vitis/common/technology/autopilot\etc/ap_common.h:586:51: note: expanded from macro '_ssdm_op_set_range'
+    typename _ap_type::remove_const<typeof(Val)>::type __Result__ = 0; \
+                                                  ^
+In file included from D:\ViT\hls_vit_export\micro_ros_hw.cpp:1:
+In file included from D:/Xilinx/2025.1/Vitis/common/technology/autopilot/ap_int.h:12:
+D:/Xilinx/2025.1/Vitis/common/technology/autopilot\etc/ap_int_ref.h:345:3: error: expected ';' after expression
+D:/Xilinx/2025.1/Vitis/common/technology/autopilot\etc/ap_int_ref.h:335:14: note: expanded from macro 'ASSIGN_WITH_CTYPE'
+    d_bv.V = _AP_ROOT_op_set_range(d_bv.V, l_index, h_index, tmp.V); \
+             ^
+D:/Xilinx/2025.1/Vitis/common/technology/autopilot\etc/ap_common.h:660:3: note: expanded from macro '_AP_ROOT_op_set_range'
+  _ssdm_op_set_range(Val, Lo, Hi, Repl)
+  ^
+D:/Xilinx/2025.1/Vitis/common/technology/autopilot\etc/ap_common.h:587:17: note: expanded from macro '_ssdm_op_set_range'
+    typeof(Val) __Val2__ = Val;                                        \
+                ^
+In file included from D:\ViT\hls_vit_export\micro_ros_hw.cpp:1:
+In file included from D:/Xilinx/2025.1/Vitis/common/technology/autopilot/ap_int.h:12:
+D:/Xilinx/2025.1/Vitis/common/technology/autopilot\etc/ap_int_ref.h:345:3: error: use of undeclared identifier '__Val2__'
+D:/Xilinx/2025.1/Vitis/common/technology/autopilot\etc/ap_int_ref.h:335:14: note: expanded from macro 'ASSIGN_WITH_CTYPE'
+    d_bv.V = _AP_ROOT_op_set_range(d_bv.V, l_index, h_index, tmp.V); \
+             ^
+D:/Xilinx/2025.1/Vitis/common/technology/autopilot\etc/ap_common.h:660:3: note: expanded from macro '_AP_ROOT_op_set_range'
+  _ssdm_op_set_range(Val, Lo, Hi, Repl)
+  ^
+D:/Xilinx/2025.1/Vitis/common/technology/autopilot\etc/ap_common.h:587:17: note: expanded from macro '_ssdm_op_set_range'
+    typeof(Val) __Val2__ = Val;                                        \
+                ^
+In file included from D:\ViT\hls_vit_export\micro_ros_hw.cpp:1:
+In file included from D:/Xilinx/2025.1/Vitis/common/technology/autopilot/ap_int.h:12:
+D:/Xilinx/2025.1/Vitis/common/technology/autopilot\etc/ap_int_ref.h:345:3: error: expected ';' after expression
+D:/Xilinx/2025.1/Vitis/common/technology/autopilot\etc/ap_int_ref.h:335:14: note: expanded from macro 'ASSIGN_WITH_CTYPE'
+    d_bv.V = _AP_ROOT_op_set_range(d_bv.V, l_index, h_index, tmp.V); \
+             ^
+D:/Xilinx/2025.1/Vitis/common/technology/autopilot\etc/ap_common.h:660:3: note: expanded from macro '_AP_ROOT_op_set_range'
+  _ssdm_op_set_range(Val, Lo, Hi, Repl)
+  ^
+D:/Xilinx/2025.1/Vitis/common/technology/autopilot\etc/ap_common.h:588:18: note: expanded from macro '_ssdm_op_set_range'
+    typeof(Repl) __Repl2__ = Repl;                                     \
+                 ^
+In file included from D:\ViT\hls_vit_export\micro_ros_hw.cpp:1:
+In file included from D:/Xilinx/2025.1/Vitis/common/technology/autopilot/ap_int.h:12:
+D:/Xilinx/2025.1/Vitis/common/technology/autopilot\etc/ap_int_ref.h:345:3: error: use of undeclared identifier '__Repl2__'
+D:/Xilinx/2025.1/Vitis/common/technology/autopilot\etc/ap_int_ref.h:335:14: note: expanded from macro 'ASSIGN_WITH_CTYPE'
+    d_bv.V = _AP_ROOT_op_set_range(d_bv.V, l_index, h_index, tmp.V); \
+             ^
+D:/Xilinx/2025.1/Vitis/common/technology/autopilot\etc/ap_common.h:660:3: note: expanded from macro '_AP_ROOT_op_set_range'
+  _ssdm_op_set_range(Val, Lo, Hi, Repl)
+  ^
+D:/Xilinx/2025.1/Vitis/common/technology/autopilot\etc/ap_common.h:588:18: note: expanded from macro '_ssdm_op_set_range'
+    typeof(Repl) __Repl2__ = Repl;                                     \
+                 ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]

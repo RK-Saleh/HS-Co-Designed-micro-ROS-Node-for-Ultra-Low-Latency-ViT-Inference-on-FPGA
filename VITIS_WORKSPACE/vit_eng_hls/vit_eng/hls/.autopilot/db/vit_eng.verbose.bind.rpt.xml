@@ -1,0 +1,50 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'vit_eng'" level="0">
+<item name = "Date">Wed Oct 14 02:27:03 2026
+</item>
+<item name = "Version">2025.1 (Build 6135595 on May 21 2025)</item>
+<item name = "Project">vit_eng</item>
+<item name = "Solution">hls (Vivado IP Flow Target)</item>
+<item name = "Product family">zynquplus</item>
+<item name = "Target device">xck26-sfvc784-2LV-c</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">5.00 ns, 3.532 ns, 1.35 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">1, 13664, 5.000 ns, 68.320 us, 2, 13665, no</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="grp_vit_eng_Pipeline_stream_in_loop_fu_770">vit_eng_Pipeline_stream_in_loop, 26, 26, 0.130 us, 0.130 us, 25, 25, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_vit_eng_Pipeline_qkv_tile_loop_fu_796">vit_eng_Pipeline_qkv_tile_loop, 31, 31, 0.155 us, 0.155 us, 25, 25, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_vit_eng_Pipeline_proj_tile_loop_fu_860">vit_eng_Pipeline_proj_tile_loop, 33, 33, 0.165 us, 0.165 us, 25, 25, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- qkv_row_loop">6720, 6720, 35, -, -, 192, no</column>
+<column name="- proj_row_loop">6912, 6912, 36, -, -, 192, no</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+</profile>

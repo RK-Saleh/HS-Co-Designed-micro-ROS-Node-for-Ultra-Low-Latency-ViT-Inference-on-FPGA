@@ -1,0 +1,195 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/Xilinx/2025.1/Vitis/common/technology/autopilot\ap_axi_sdata.h:149:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="get_data" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/Xilinx/2025.1/Vitis/common/technology/autopilot\ap_axi_sdata.h:154:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="set_data" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/Xilinx/2025.1/Vitis/common/technology/autopilot\ap_axi_sdata.h:219:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="keep_all" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/Xilinx/2025.1/Vitis/common/technology/autopilot\ap_axi_sdata.h:332:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="empty" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/Xilinx/2025.1/Vitis/common/technology/autopilot\ap_axi_sdata.h:340:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="full" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/Xilinx/2025.1/Vitis/common/technology/autopilot\ap_axi_sdata.h:349:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="read" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/Xilinx/2025.1/Vitis/common/technology/autopilot\ap_axi_sdata.h:360:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="read" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/Xilinx/2025.1/Vitis/common/technology/autopilot\ap_axi_sdata.h:372:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="write" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/Xilinx/2025.1/Vitis/common/technology/autopilot\ap_axi_sdata.h:383:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="read_nb" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/Xilinx/2025.1/Vitis/common/technology/autopilot\ap_axi_sdata.h:400:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="write_nb" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="directive:1:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="vit_eng" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=vit_eng" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/ViT/hls_vit_export/vit_eng.cpp:16:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="vit_eng" ARG_PragmaIsValid="1" ARG_PragmaOptions="axis port=s_axis_img" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/ViT/hls_vit_export/vit_eng.cpp:17:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="vit_eng" ARG_PragmaIsValid="1" ARG_PragmaOptions="axis port=m_axis_det" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/ViT/hls_vit_export/vit_eng.cpp:18:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="vit_eng" ARG_PragmaIsValid="1" ARG_PragmaOptions="ap_none port=heartbeat_pulse" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/ViT/hls_vit_export/vit_eng.cpp:19:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="vit_eng" ARG_PragmaIsValid="1" ARG_PragmaOptions="ap_ctrl_none port=return" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/ViT/hls_vit_export/vit_eng.cpp:27:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="vit_eng" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=token_in cyclic factor=8 dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/ViT/hls_vit_export/vit_eng.cpp:28:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="vit_eng" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=q_vec cyclic factor=8 dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/ViT/hls_vit_export/vit_eng.cpp:29:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="vit_eng" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=k_vec cyclic factor=8 dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/ViT/hls_vit_export/vit_eng.cpp:30:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="vit_eng" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=v_vec cyclic factor=8 dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/ViT/hls_vit_export/vit_eng.cpp:31:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="vit_eng" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=attn_out cyclic factor=8 dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/ViT/hls_vit_export/vit_eng.cpp:33:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="vit_eng" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=W_QUERY_L0 cyclic factor=8 dim=2" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/ViT/hls_vit_export/vit_eng.cpp:34:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="vit_eng" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=W_KEY_L0 cyclic factor=8 dim=2" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/ViT/hls_vit_export/vit_eng.cpp:35:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="vit_eng" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=W_VALUE_L0 cyclic factor=8 dim=2" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/ViT/hls_vit_export/vit_eng.cpp:36:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="vit_eng" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=W_PROJ_L0 cyclic factor=8 dim=2" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/ViT/hls_vit_export/vit_eng.cpp:43:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="vit_eng" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/ViT/hls_vit_export/vit_eng.cpp:46:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="vit_eng" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/ViT/hls_vit_export/vit_eng.cpp:55:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="vit_eng" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/ViT/hls_vit_export/vit_eng.cpp:57:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="vit_eng" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/ViT/hls_vit_export/vit_eng.cpp:75:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="vit_eng" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/ViT/hls_vit_export/vit_eng.cpp:77:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="vit_eng" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="D:/ViT/hls_vit_export/vit_eng.cpp:76:19" msg_body="Loop 'VITIS_LOOP_76_3' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_76_3"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="D:/ViT/hls_vit_export/vit_eng.cpp:56:19" msg_body="Loop 'VITIS_LOOP_56_2' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_56_2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="D:/ViT/hls_vit_export/vit_eng.cpp:45:30" msg_body="Loop 'VITIS_LOOP_45_1' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_45_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="D:/ViT/hls_vit_export/vit_eng.cpp:15:0" msg_body="Unrolling loop 'VITIS_LOOP_76_3' (D:/ViT/hls_vit_export/vit_eng.cpp:76:19) in function 'vit_eng' completely with a factor of 8">
+        <args Factor="8" LoopLoc="D:/ViT/hls_vit_export/vit_eng.cpp:76:19" LoopName="VITIS_LOOP_76_3"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="D:/ViT/hls_vit_export/vit_eng.cpp:15:0" msg_body="Unrolling loop 'VITIS_LOOP_56_2' (D:/ViT/hls_vit_export/vit_eng.cpp:56:19) in function 'vit_eng' completely with a factor of 8">
+        <args Factor="8" LoopLoc="D:/ViT/hls_vit_export/vit_eng.cpp:56:19" LoopName="VITIS_LOOP_56_2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="D:/ViT/hls_vit_export/vit_eng.cpp:15:0" msg_body="Unrolling loop 'VITIS_LOOP_45_1' (D:/ViT/hls_vit_export/vit_eng.cpp:45:30) in function 'vit_eng' completely with a factor of 8">
+        <args Factor="8" LoopLoc="D:/ViT/hls_vit_export/vit_eng.cpp:45:30" LoopName="VITIS_LOOP_45_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="D:/ViT/hls_vit_export/vit_weights_layer0.h:25:0" msg_body="Applying array_partition to '_ZL9W_PROJ_L0': Cyclic partitioning with factor 8 on dimension 2.">
+        <args Dim="2" Factor="8" Mode="Cyclic" UOName="_ZL9W_PROJ_L0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="D:/ViT/hls_vit_export/vit_weights_layer0.h:21:0" msg_body="Applying array_partition to '_ZL10W_VALUE_L0': Cyclic partitioning with factor 8 on dimension 2.">
+        <args Dim="2" Factor="8" Mode="Cyclic" UOName="_ZL10W_VALUE_L0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="D:/ViT/hls_vit_export/vit_weights_layer0.h:17:0" msg_body="Applying array_partition to '_ZL8W_KEY_L0': Cyclic partitioning with factor 8 on dimension 2.">
+        <args Dim="2" Factor="8" Mode="Cyclic" UOName="_ZL8W_KEY_L0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="D:/ViT/hls_vit_export/vit_weights_layer0.h:13:0" msg_body="Applying array_partition to '_ZL10W_QUERY_L0': Cyclic partitioning with factor 8 on dimension 2.">
+        <args Dim="2" Factor="8" Mode="Cyclic" UOName="_ZL10W_QUERY_L0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="D:/ViT/hls_vit_export/vit_eng.cpp:21:8" msg_body="Applying array_partition to 'token_in': Cyclic partitioning with factor 8 on dimension 1.">
+        <args Dim="1" Factor="8" Mode="Cyclic" UOName="token_in"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="D:/ViT/hls_vit_export/vit_eng.cpp:22:11" msg_body="Applying array_partition to 'q_vec': Cyclic partitioning with factor 8 on dimension 1.">
+        <args Dim="1" Factor="8" Mode="Cyclic" UOName="q_vec"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="D:/ViT/hls_vit_export/vit_eng.cpp:23:11" msg_body="Applying array_partition to 'k_vec': Cyclic partitioning with factor 8 on dimension 1.">
+        <args Dim="1" Factor="8" Mode="Cyclic" UOName="k_vec"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="D:/ViT/hls_vit_export/vit_eng.cpp:24:11" msg_body="Applying array_partition to 'v_vec': Cyclic partitioning with factor 8 on dimension 1.">
+        <args Dim="1" Factor="8" Mode="Cyclic" UOName="v_vec"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="D:/ViT/hls_vit_export/vit_eng.cpp:25:11" msg_body="Applying array_partition to 'attn_out': Cyclic partitioning with factor 8 on dimension 1.">
+        <args Dim="1" Factor="8" Mode="Cyclic" UOName="attn_out"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-449" msg_severity="INFO" msg_loc="D:/ViT/hls_vit_export/vit_eng.cpp:25:11" msg_body="Automatically partitioning array 'attn_out' dimension 1 completely based on constant index.">
+        <args Dim="1" Value="attn_out"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="D:/ViT/hls_vit_export/vit_eng.cpp:25:11" msg_body="array_partition dim=1 type=complete  variable=attn_out_2 1 vit_eng D:/ViT/hls_vit_export/vit_eng.cpp:25:11 attn_out_2">
+        <args PragmaFunction="vit_eng" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=attn_out_2" PragmaType="array_partition" VarName="attn_out_2" varLoc="D:/ViT/hls_vit_export/vit_eng.cpp:25:11"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="D:/ViT/hls_vit_export/vit_eng.cpp:25:11" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'attn_out_2' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="attn_out_2" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="D:/ViT/hls_vit_export/vit_eng.cpp:25:11" msg_body="array_partition dim=1 type=complete  variable=attn_out_3 1 vit_eng D:/ViT/hls_vit_export/vit_eng.cpp:25:11 attn_out_3">
+        <args PragmaFunction="vit_eng" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=attn_out_3" PragmaType="array_partition" VarName="attn_out_3" varLoc="D:/ViT/hls_vit_export/vit_eng.cpp:25:11"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="D:/ViT/hls_vit_export/vit_eng.cpp:25:11" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'attn_out_3' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="attn_out_3" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="D:/ViT/hls_vit_export/vit_eng.cpp:25:11" msg_body="array_partition dim=1 type=complete  variable=attn_out_4 1 vit_eng D:/ViT/hls_vit_export/vit_eng.cpp:25:11 attn_out_4">
+        <args PragmaFunction="vit_eng" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=attn_out_4" PragmaType="array_partition" VarName="attn_out_4" varLoc="D:/ViT/hls_vit_export/vit_eng.cpp:25:11"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="D:/ViT/hls_vit_export/vit_eng.cpp:25:11" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'attn_out_4' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="attn_out_4" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="D:/ViT/hls_vit_export/vit_eng.cpp:25:11" msg_body="array_partition dim=1 type=complete  variable=attn_out_5 1 vit_eng D:/ViT/hls_vit_export/vit_eng.cpp:25:11 attn_out_5">
+        <args PragmaFunction="vit_eng" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=attn_out_5" PragmaType="array_partition" VarName="attn_out_5" varLoc="D:/ViT/hls_vit_export/vit_eng.cpp:25:11"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="D:/ViT/hls_vit_export/vit_eng.cpp:25:11" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'attn_out_5' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="attn_out_5" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="D:/ViT/hls_vit_export/vit_eng.cpp:25:11" msg_body="array_partition dim=1 type=complete  variable=attn_out_6 1 vit_eng D:/ViT/hls_vit_export/vit_eng.cpp:25:11 attn_out_6">
+        <args PragmaFunction="vit_eng" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=attn_out_6" PragmaType="array_partition" VarName="attn_out_6" varLoc="D:/ViT/hls_vit_export/vit_eng.cpp:25:11"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="D:/ViT/hls_vit_export/vit_eng.cpp:25:11" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'attn_out_6' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="attn_out_6" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="D:/ViT/hls_vit_export/vit_eng.cpp:25:11" msg_body="array_partition dim=1 type=complete  variable=attn_out_7 1 vit_eng D:/ViT/hls_vit_export/vit_eng.cpp:25:11 attn_out_7">
+        <args PragmaFunction="vit_eng" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=attn_out_7" PragmaType="array_partition" VarName="attn_out_7" varLoc="D:/ViT/hls_vit_export/vit_eng.cpp:25:11"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="D:/ViT/hls_vit_export/vit_eng.cpp:25:11" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'attn_out_7' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="attn_out_7" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="D:/ViT/hls_vit_export/vit_eng.cpp:25:11" msg_body="Applying array_partition to 'attn_out_2': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="attn_out_2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="D:/ViT/hls_vit_export/vit_eng.cpp:25:11" msg_body="Applying array_partition to 'attn_out_3': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="attn_out_3"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="D:/ViT/hls_vit_export/vit_eng.cpp:25:11" msg_body="Applying array_partition to 'attn_out_4': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="attn_out_4"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="D:/ViT/hls_vit_export/vit_eng.cpp:25:11" msg_body="Applying array_partition to 'attn_out_5': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="attn_out_5"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="D:/ViT/hls_vit_export/vit_eng.cpp:25:11" msg_body="Applying array_partition to 'attn_out_6': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="attn_out_6"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="D:/ViT/hls_vit_export/vit_eng.cpp:25:11" msg_body="Applying array_partition to 'attn_out_7': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="attn_out_7"/>
+    </msg>
+</xilinx:hls_fe_msgs>
+

@@ -1,0 +1,179 @@
+
+
+================================================================
+== Vitis HLS Report for 'vit_eng_Pipeline_stream_in_loop'
+================================================================
+* Date:           Wed Oct 14 02:27:05 2026
+
+* Version:        2025.1 (Build 6135595 on May 21 2025)
+* Project:        vit_eng
+* Solution:       hls (Vivado IP Flow Target)
+* Product family: zynquplus
+* Target device:  xck26-sfvc784-2LV-c
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  5.00 ns|  1.643 ns|     1.35 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+------------------------------------------------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval |                    Pipeline                    |
+    |   min   |   max   |    min   |    max   | min | max |                      Type                      |
+    +---------+---------+----------+----------+-----+-----+------------------------------------------------+
+    |       26|       26|  0.130 us|  0.130 us|   25|   25|  loop auto-rewind stp (delay=0 clock cycles(s))|
+    +---------+---------+----------+----------+-----+-----+------------------------------------------------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                  |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |     Loop Name    |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- stream_in_loop  |       24|       24|         2|          1|          1|    24|       yes|
+        +------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+------+--------+--------+-----+
+|       Name      | BRAM_18K|  DSP |   FF   |   LUT  | URAM|
++-----------------+---------+------+--------+--------+-----+
+|DSP              |        -|     -|       -|       -|    -|
+|Expression       |        -|     -|       0|      28|    -|
+|FIFO             |        -|     -|       -|       -|    -|
+|Instance         |        -|     -|       -|       -|    -|
+|Memory           |        -|     -|       -|       -|    -|
+|Multiplexer      |        -|     -|       0|      45|    -|
+|Register         |        -|     -|      13|       -|    -|
++-----------------+---------+------+--------+--------+-----+
+|Total            |        0|     0|      13|      73|    0|
++-----------------+---------+------+--------+--------+-----+
+|Available        |      288|  1248|  234240|  117120|   64|
++-----------------+---------+------+--------+--------+-----+
+|Utilization (%)  |        0|     0|      ~0|      ~0|    0|
++-----------------+---------+------+--------+--------+-----+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +---------------------------+----------+----+---+----+------------+------------+
+    |       Variable Name       | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +---------------------------+----------+----+---+----+------------+------------+
+    |add_ln42_fu_224_p2         |         +|   0|  0|  12|           5|           1|
+    |ap_block_pp0_stage0_11001  |       and|   0|  0|   2|           1|           1|
+    |icmp_ln42_fu_218_p2        |      icmp|   0|  0|  12|           5|           5|
+    |ap_enable_pp0              |       xor|   0|  0|   2|           1|           2|
+    +---------------------------+----------+----+---+----+------------+------------+
+    |Total                      |          |   0|  0|  28|          12|           9|
+    +---------------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-------------------------+----+-----------+-----+-----------+
+    |           Name          | LUT| Input Size| Bits| Total Bits|
+    +-------------------------+----+-----------+-----+-----------+
+    |ap_done_int              |   9|          2|    1|          2|
+    |ap_enable_reg_pp0_iter1  |   9|          2|    1|          2|
+    |ap_sig_allocacmp_b_1     |   9|          2|    5|         10|
+    |b_fu_84                  |   9|          2|    5|         10|
+    |s_axis_img_TDATA_blk_n   |   9|          2|    1|          2|
+    +-------------------------+----+-----------+-----+-----------+
+    |Total                    |  45|         10|   13|         26|
+    +-------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +-------------------------+---+----+-----+-----------+
+    |           Name          | FF| LUT| Bits| Const Bits|
+    +-------------------------+---+----+-----+-----------+
+    |ap_CS_fsm                |  1|   0|    1|          0|
+    |ap_done_reg              |  1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter1  |  1|   0|    1|          0|
+    |b_1_reg_325              |  5|   0|    5|          0|
+    |b_fu_84                  |  5|   0|    5|          0|
+    +-------------------------+---+----+-----+-----------+
+    |Total                    | 13|   0|   13|          0|
+    +-------------------------+---+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++---------------------+-----+-----+------------+---------------------------------+--------------+
+|      RTL Ports      | Dir | Bits|  Protocol  |          Source Object          |    C Type    |
++---------------------+-----+-----+------------+---------------------------------+--------------+
+|ap_clk               |   in|    1|  ap_ctrl_hs|  vit_eng_Pipeline_stream_in_loop|  return value|
+|ap_rst               |   in|    1|  ap_ctrl_hs|  vit_eng_Pipeline_stream_in_loop|  return value|
+|ap_start             |   in|    1|  ap_ctrl_hs|  vit_eng_Pipeline_stream_in_loop|  return value|
+|ap_done              |  out|    1|  ap_ctrl_hs|  vit_eng_Pipeline_stream_in_loop|  return value|
+|ap_idle              |  out|    1|  ap_ctrl_hs|  vit_eng_Pipeline_stream_in_loop|  return value|
+|ap_ready             |  out|    1|  ap_ctrl_hs|  vit_eng_Pipeline_stream_in_loop|  return value|
+|s_axis_img_TVALID    |   in|    1|        axis|              s_axis_img_V_data_V|       pointer|
+|s_axis_img_TDATA     |   in|   64|        axis|              s_axis_img_V_data_V|       pointer|
+|token_in_7_address0  |  out|    5|   ap_memory|                       token_in_7|         array|
+|token_in_7_ce0       |  out|    1|   ap_memory|                       token_in_7|         array|
+|token_in_7_we0       |  out|    1|   ap_memory|                       token_in_7|         array|
+|token_in_7_d0        |  out|    8|   ap_memory|                       token_in_7|         array|
+|token_in_6_address0  |  out|    5|   ap_memory|                       token_in_6|         array|
+|token_in_6_ce0       |  out|    1|   ap_memory|                       token_in_6|         array|
+|token_in_6_we0       |  out|    1|   ap_memory|                       token_in_6|         array|
+|token_in_6_d0        |  out|    8|   ap_memory|                       token_in_6|         array|
+|token_in_5_address0  |  out|    5|   ap_memory|                       token_in_5|         array|
+|token_in_5_ce0       |  out|    1|   ap_memory|                       token_in_5|         array|
+|token_in_5_we0       |  out|    1|   ap_memory|                       token_in_5|         array|
+|token_in_5_d0        |  out|    8|   ap_memory|                       token_in_5|         array|
+|token_in_4_address0  |  out|    5|   ap_memory|                       token_in_4|         array|
+|token_in_4_ce0       |  out|    1|   ap_memory|                       token_in_4|         array|
+|token_in_4_we0       |  out|    1|   ap_memory|                       token_in_4|         array|
+|token_in_4_d0        |  out|    8|   ap_memory|                       token_in_4|         array|
+|token_in_3_address0  |  out|    5|   ap_memory|                       token_in_3|         array|
+|token_in_3_ce0       |  out|    1|   ap_memory|                       token_in_3|         array|
+|token_in_3_we0       |  out|    1|   ap_memory|                       token_in_3|         array|
+|token_in_3_d0        |  out|    8|   ap_memory|                       token_in_3|         array|
+|token_in_2_address0  |  out|    5|   ap_memory|                       token_in_2|         array|
+|token_in_2_ce0       |  out|    1|   ap_memory|                       token_in_2|         array|
+|token_in_2_we0       |  out|    1|   ap_memory|                       token_in_2|         array|
+|token_in_2_d0        |  out|    8|   ap_memory|                       token_in_2|         array|
+|token_in_1_address0  |  out|    5|   ap_memory|                       token_in_1|         array|
+|token_in_1_ce0       |  out|    1|   ap_memory|                       token_in_1|         array|
+|token_in_1_we0       |  out|    1|   ap_memory|                       token_in_1|         array|
+|token_in_1_d0        |  out|    8|   ap_memory|                       token_in_1|         array|
+|token_in_address0    |  out|    5|   ap_memory|                         token_in|         array|
+|token_in_ce0         |  out|    1|   ap_memory|                         token_in|         array|
+|token_in_we0         |  out|    1|   ap_memory|                         token_in|         array|
+|token_in_d0          |  out|    8|   ap_memory|                         token_in|         array|
+|s_axis_img_TREADY    |  out|    1|        axis|              s_axis_img_V_dest_V|       pointer|
+|s_axis_img_TDEST     |   in|    1|        axis|              s_axis_img_V_dest_V|       pointer|
+|s_axis_img_TKEEP     |   in|    8|        axis|              s_axis_img_V_keep_V|       pointer|
+|s_axis_img_TSTRB     |   in|    8|        axis|              s_axis_img_V_strb_V|       pointer|
+|s_axis_img_TUSER     |   in|    1|        axis|              s_axis_img_V_user_V|       pointer|
+|s_axis_img_TLAST     |   in|    1|        axis|              s_axis_img_V_last_V|       pointer|
+|s_axis_img_TID       |   in|    1|        axis|                s_axis_img_V_id_V|       pointer|
++---------------------+-----+-----+------------+---------------------------------+--------------+
+

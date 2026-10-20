@@ -1,0 +1,44 @@
+#-----------------------------------------------------------
+# Vivado v2025.1 (64-bit)
+# SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
+# IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+# SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+# Start of session at: Wed Oct 14 02:29:50 2026
+# Process ID         : 1780
+# Current directory  : F:/Thesis/VITIS_WORKSPACE/vit_eng_hls/vit_eng/hls/impl/ip
+# Command line       : vivado.exe -notrace -mode batch -source run_ippack.tcl
+# Log file           : F:/Thesis/VITIS_WORKSPACE/vit_eng_hls/vit_eng/hls/impl/ip/vivado.log
+# Journal file       : F:/Thesis/VITIS_WORKSPACE/vit_eng_hls/vit_eng/hls/impl/ip\vivado.jou
+# Running On         : RUHUL
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : 11th Gen Intel(R) Core(TM) i7-1165G7 @ 2.80GHz
+# CPU Frequency      : 2803 MHz
+# CPU Physical cores : 4
+# CPU Logical cores  : 8
+# Host memory        : 8344 MB
+# Swap memory        : 8368 MB
+# Total Virtual      : 16713 MB
+# Available Virtual  : 3557 MB
+#-----------------------------------------------------------
+source run_ippack.tcl -notrace
+INFO: calling package_hls_ip ip_types=vitis sysgen json_file=F:/Thesis/VITIS_WORKSPACE/vit_eng_hls/vit_eng/hls/hls_data.json outdir=F:/Thesis/VITIS_WORKSPACE/vit_eng_hls/vit_eng/hls/impl/ip srcdir=F:/Thesis/VITIS_WORKSPACE/vit_eng_hls/vit_eng/hls ippack_options_dict= ippack_options_dict=
+INFO: Copied 1 ipmisc file(s) to F:/Thesis/VITIS_WORKSPACE/vit_eng_hls/vit_eng/hls/impl/ip/misc
+INFO: Copied 80 verilog file(s) to F:/Thesis/VITIS_WORKSPACE/vit_eng_hls/vit_eng/hls/impl/ip/hdl/verilog
+INFO: Copied 46 vhdl file(s) to F:/Thesis/VITIS_WORKSPACE/vit_eng_hls/vit_eng/hls/impl/ip/hdl/vhdl
+ipx::create_core: Time (s): cpu = 00:00:12 ; elapsed = 00:00:08 . Memory (MB): peak = 543.789 ; gain = 244.285
+INFO: Import ports from HDL: F:/Thesis/VITIS_WORKSPACE/vit_eng_hls/vit_eng/hls/impl/ip/hdl/vhdl/vit_eng.vhd (vit_eng)
+INFO: Add clock interface ap_clk
+INFO: Add reset interface ap_rst_n
+INFO: Add axi4stream interface s_axis_img
+INFO: Add axi4stream interface m_axis_det
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/2025.1/Vivado/data/ip'.
+INFO: Add data interface heartbeat_pulse
+INFO: Calling post_process_vitis to specialize IP
+INFO: Calling post_process_sysgen to specialize IP
+Generating sysgen info xml from json file
+INFO: Created IP F:/Thesis/VITIS_WORKSPACE/vit_eng_hls/vit_eng/hls/impl/ip/component.xml
+INFO: Created IP archive F:/Thesis/VITIS_WORKSPACE/vit_eng_hls/vit_eng/hls/impl/ip/xilinx_com_hls_vit_eng_1_0.zip
+INFO: [Common 17-206] Exiting Vivado at Wed Oct 14 02:30:08 2026...

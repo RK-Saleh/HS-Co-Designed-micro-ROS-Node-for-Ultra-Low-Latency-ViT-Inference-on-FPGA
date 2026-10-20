@@ -1,0 +1,9 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch CLANG as the compiler.
+make: 'csim.exe' is up to date.
+--- Starting Vitis HLS C-Simulation for micro_ros_hw ---
+[PASS] XRCE-DDS Frame Completed at Beat 3 | Safety State Flag (TUSER): 0 | Payload Class_ID: 16
+[PASS] XRCE-DDS Frame Completed at Beat 6 | Safety State Flag (TUSER): 1 | Payload Class_ID: 2
+INFO [HLS SIM]: The maximum depth reached by any hls::stream() instance in the design is 6
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

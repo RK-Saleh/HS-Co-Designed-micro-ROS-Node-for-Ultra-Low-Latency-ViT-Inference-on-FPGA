@@ -1,0 +1,13 @@
+{
+  "name": "micro_ros_hls",
+  "type": "HLS",
+  "configuration": {
+    "componentType": "HLS",
+    "configFiles": [
+      "hls_config.cfg"
+    ],
+    "work_dir": "micro_ros_hw"
+  },
+  "useSysrootToolchain": false,
+  "template": "empty_hls_component"
+}

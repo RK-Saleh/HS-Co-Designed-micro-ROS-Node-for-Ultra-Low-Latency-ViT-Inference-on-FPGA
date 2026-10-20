@@ -1,0 +1,153 @@
+Core Configuration Properties
+=============================
+CONFIG.HAS_AXI_LITE                                   0
+CONFIG.HAS_AXIS_CONTROL                               0
+CONFIG.HAS_AXIS_STATUS                                0
+CONFIG.HAS_SIGNAL_CONTROL                             1
+CONFIG.HAS_SIGNAL_STATUS                              1
+CONFIG.ALWAYS_HAVE_AXI_CLK                            0
+CONFIG.INTF.vit_stream.VLNV                           xilinx.com:interface:axis_rtl:1.0
+CONFIG.INTF.vit_stream.MODE                           master
+CONFIG.INTF.vit_stream.CDC_STAGES                     0
+CONFIG.INTF.vit_stream.REGISTER                       0
+CONFIG.INTF.vit_stream.SIGNAL.TVALID.PRESENT          1
+CONFIG.INTF.vit_stream.SIGNAL.TVALID.DECOUPLED        1
+CONFIG.INTF.vit_stream.SIGNAL.TVALID.DECOUPLED_VALUE  0x0
+CONFIG.INTF.vit_stream.SIGNAL.TVALID.WIDTH            1
+CONFIG.INTF.vit_stream.SIGNAL.TVALID.DIRECTION        s
+CONFIG.INTF.vit_stream.SIGNAL.TVALID.RESOURCE         infer
+CONFIG.INTF.vit_stream.SIGNAL.TVALID.MANAGEMENT       auto
+CONFIG.INTF.vit_stream.SIGNAL.TREADY.PRESENT          1
+CONFIG.INTF.vit_stream.SIGNAL.TREADY.DECOUPLED        1
+CONFIG.INTF.vit_stream.SIGNAL.TREADY.DECOUPLED_VALUE  0x0
+CONFIG.INTF.vit_stream.SIGNAL.TREADY.WIDTH            1
+CONFIG.INTF.vit_stream.SIGNAL.TREADY.DIRECTION        s
+CONFIG.INTF.vit_stream.SIGNAL.TREADY.RESOURCE         infer
+CONFIG.INTF.vit_stream.SIGNAL.TREADY.MANAGEMENT       auto
+CONFIG.INTF.vit_stream.SIGNAL.TDATA.PRESENT           1
+CONFIG.INTF.vit_stream.SIGNAL.TDATA.DECOUPLED         0
+CONFIG.INTF.vit_stream.SIGNAL.TDATA.DECOUPLED_VALUE   0x0
+CONFIG.INTF.vit_stream.SIGNAL.TDATA.WIDTH             64
+CONFIG.INTF.vit_stream.SIGNAL.TDATA.DIRECTION         s
+CONFIG.INTF.vit_stream.SIGNAL.TDATA.RESOURCE          infer
+CONFIG.INTF.vit_stream.SIGNAL.TDATA.MANAGEMENT        auto
+CONFIG.INTF.vit_stream.SIGNAL.TUSER.PRESENT           1
+CONFIG.INTF.vit_stream.SIGNAL.TUSER.DECOUPLED         0
+CONFIG.INTF.vit_stream.SIGNAL.TUSER.DECOUPLED_VALUE   0x0
+CONFIG.INTF.vit_stream.SIGNAL.TUSER.WIDTH             1
+CONFIG.INTF.vit_stream.SIGNAL.TUSER.DIRECTION         s
+CONFIG.INTF.vit_stream.SIGNAL.TUSER.RESOURCE          infer
+CONFIG.INTF.vit_stream.SIGNAL.TUSER.MANAGEMENT        auto
+CONFIG.INTF.vit_stream.SIGNAL.TLAST.PRESENT           1
+CONFIG.INTF.vit_stream.SIGNAL.TLAST.DECOUPLED         0
+CONFIG.INTF.vit_stream.SIGNAL.TLAST.DECOUPLED_VALUE   0x0
+CONFIG.INTF.vit_stream.SIGNAL.TLAST.WIDTH             1
+CONFIG.INTF.vit_stream.SIGNAL.TLAST.DIRECTION         s
+CONFIG.INTF.vit_stream.SIGNAL.TLAST.RESOURCE          infer
+CONFIG.INTF.vit_stream.SIGNAL.TLAST.MANAGEMENT        auto
+CONFIG.INTF.vit_stream.SIGNAL.TID.PRESENT             1
+CONFIG.INTF.vit_stream.SIGNAL.TID.DECOUPLED           0
+CONFIG.INTF.vit_stream.SIGNAL.TID.DECOUPLED_VALUE     0x0
+CONFIG.INTF.vit_stream.SIGNAL.TID.WIDTH               1
+CONFIG.INTF.vit_stream.SIGNAL.TID.DIRECTION           s
+CONFIG.INTF.vit_stream.SIGNAL.TID.RESOURCE            infer
+CONFIG.INTF.vit_stream.SIGNAL.TID.MANAGEMENT          auto
+CONFIG.INTF.vit_stream.SIGNAL.TDEST.PRESENT           1
+CONFIG.INTF.vit_stream.SIGNAL.TDEST.DECOUPLED         0
+CONFIG.INTF.vit_stream.SIGNAL.TDEST.DECOUPLED_VALUE   0x0
+CONFIG.INTF.vit_stream.SIGNAL.TDEST.WIDTH             1
+CONFIG.INTF.vit_stream.SIGNAL.TDEST.DIRECTION         s
+CONFIG.INTF.vit_stream.SIGNAL.TDEST.RESOURCE          infer
+CONFIG.INTF.vit_stream.SIGNAL.TDEST.MANAGEMENT        auto
+CONFIG.INTF.vit_stream.SIGNAL.TSTRB.PRESENT           1
+CONFIG.INTF.vit_stream.SIGNAL.TSTRB.DECOUPLED         0
+CONFIG.INTF.vit_stream.SIGNAL.TSTRB.DECOUPLED_VALUE   0x0
+CONFIG.INTF.vit_stream.SIGNAL.TSTRB.WIDTH             8
+CONFIG.INTF.vit_stream.SIGNAL.TSTRB.DIRECTION         s
+CONFIG.INTF.vit_stream.SIGNAL.TSTRB.RESOURCE          infer
+CONFIG.INTF.vit_stream.SIGNAL.TSTRB.MANAGEMENT        auto
+CONFIG.INTF.vit_stream.SIGNAL.TKEEP.PRESENT           1
+CONFIG.INTF.vit_stream.SIGNAL.TKEEP.DECOUPLED         0
+CONFIG.INTF.vit_stream.SIGNAL.TKEEP.DECOUPLED_VALUE   0x0
+CONFIG.INTF.vit_stream.SIGNAL.TKEEP.WIDTH             8
+CONFIG.INTF.vit_stream.SIGNAL.TKEEP.DIRECTION         s
+CONFIG.INTF.vit_stream.SIGNAL.TKEEP.RESOURCE          infer
+CONFIG.INTF.vit_stream.SIGNAL.TKEEP.MANAGEMENT        auto
+
+
+dfx_decoupler_v1_0::set_property -dict [list \
+                               CONFIG.HAS_AXI_LITE                                   0 \
+                               CONFIG.HAS_AXIS_CONTROL                               0 \
+                               CONFIG.HAS_AXIS_STATUS                                0 \
+                               CONFIG.HAS_SIGNAL_CONTROL                             1 \
+                               CONFIG.HAS_SIGNAL_STATUS                              1 \
+                               CONFIG.ALWAYS_HAVE_AXI_CLK                            0 \
+                               CONFIG.INTF.vit_stream.VLNV                           xilinx.com:interface:axis_rtl:1.0 \
+                               CONFIG.INTF.vit_stream.MODE                           master \
+                               CONFIG.INTF.vit_stream.CDC_STAGES                     0 \
+                               CONFIG.INTF.vit_stream.REGISTER                       0 \
+                               CONFIG.INTF.vit_stream.SIGNAL.TVALID.PRESENT          1 \
+                               CONFIG.INTF.vit_stream.SIGNAL.TVALID.DECOUPLED        1 \
+                               CONFIG.INTF.vit_stream.SIGNAL.TVALID.DECOUPLED_VALUE  0x0 \
+                               CONFIG.INTF.vit_stream.SIGNAL.TVALID.WIDTH            1 \
+                               CONFIG.INTF.vit_stream.SIGNAL.TVALID.DIRECTION        s \
+                               CONFIG.INTF.vit_stream.SIGNAL.TVALID.RESOURCE         infer \
+                               CONFIG.INTF.vit_stream.SIGNAL.TVALID.MANAGEMENT       auto \
+                               CONFIG.INTF.vit_stream.SIGNAL.TREADY.PRESENT          1 \
+                               CONFIG.INTF.vit_stream.SIGNAL.TREADY.DECOUPLED        1 \
+                               CONFIG.INTF.vit_stream.SIGNAL.TREADY.DECOUPLED_VALUE  0x0 \
+                               CONFIG.INTF.vit_stream.SIGNAL.TREADY.WIDTH            1 \
+                               CONFIG.INTF.vit_stream.SIGNAL.TREADY.DIRECTION        s \
+                               CONFIG.INTF.vit_stream.SIGNAL.TREADY.RESOURCE         infer \
+                               CONFIG.INTF.vit_stream.SIGNAL.TREADY.MANAGEMENT       auto \
+                               CONFIG.INTF.vit_stream.SIGNAL.TDATA.PRESENT           1 \
+                               CONFIG.INTF.vit_stream.SIGNAL.TDATA.DECOUPLED         0 \
+                               CONFIG.INTF.vit_stream.SIGNAL.TDATA.DECOUPLED_VALUE   0x0 \
+                               CONFIG.INTF.vit_stream.SIGNAL.TDATA.WIDTH             64 \
+                               CONFIG.INTF.vit_stream.SIGNAL.TDATA.DIRECTION         s \
+                               CONFIG.INTF.vit_stream.SIGNAL.TDATA.RESOURCE          infer \
+                               CONFIG.INTF.vit_stream.SIGNAL.TDATA.MANAGEMENT        auto \
+                               CONFIG.INTF.vit_stream.SIGNAL.TUSER.PRESENT           1 \
+                               CONFIG.INTF.vit_stream.SIGNAL.TUSER.DECOUPLED         0 \
+                               CONFIG.INTF.vit_stream.SIGNAL.TUSER.DECOUPLED_VALUE   0x0 \
+                               CONFIG.INTF.vit_stream.SIGNAL.TUSER.WIDTH             1 \
+                               CONFIG.INTF.vit_stream.SIGNAL.TUSER.DIRECTION         s \
+                               CONFIG.INTF.vit_stream.SIGNAL.TUSER.RESOURCE          infer \
+                               CONFIG.INTF.vit_stream.SIGNAL.TUSER.MANAGEMENT        auto \
+                               CONFIG.INTF.vit_stream.SIGNAL.TLAST.PRESENT           1 \
+                               CONFIG.INTF.vit_stream.SIGNAL.TLAST.DECOUPLED         0 \
+                               CONFIG.INTF.vit_stream.SIGNAL.TLAST.DECOUPLED_VALUE   0x0 \
+                               CONFIG.INTF.vit_stream.SIGNAL.TLAST.WIDTH             1 \
+                               CONFIG.INTF.vit_stream.SIGNAL.TLAST.DIRECTION         s \
+                               CONFIG.INTF.vit_stream.SIGNAL.TLAST.RESOURCE          infer \
+                               CONFIG.INTF.vit_stream.SIGNAL.TLAST.MANAGEMENT        auto \
+                               CONFIG.INTF.vit_stream.SIGNAL.TID.PRESENT             1 \
+                               CONFIG.INTF.vit_stream.SIGNAL.TID.DECOUPLED           0 \
+                               CONFIG.INTF.vit_stream.SIGNAL.TID.DECOUPLED_VALUE     0x0 \
+                               CONFIG.INTF.vit_stream.SIGNAL.TID.WIDTH               1 \
+                               CONFIG.INTF.vit_stream.SIGNAL.TID.DIRECTION           s \
+                               CONFIG.INTF.vit_stream.SIGNAL.TID.RESOURCE            infer \
+                               CONFIG.INTF.vit_stream.SIGNAL.TID.MANAGEMENT          auto \
+                               CONFIG.INTF.vit_stream.SIGNAL.TDEST.PRESENT           1 \
+                               CONFIG.INTF.vit_stream.SIGNAL.TDEST.DECOUPLED         0 \
+                               CONFIG.INTF.vit_stream.SIGNAL.TDEST.DECOUPLED_VALUE   0x0 \
+                               CONFIG.INTF.vit_stream.SIGNAL.TDEST.WIDTH             1 \
+                               CONFIG.INTF.vit_stream.SIGNAL.TDEST.DIRECTION         s \
+                               CONFIG.INTF.vit_stream.SIGNAL.TDEST.RESOURCE          infer \
+                               CONFIG.INTF.vit_stream.SIGNAL.TDEST.MANAGEMENT        auto \
+                               CONFIG.INTF.vit_stream.SIGNAL.TSTRB.PRESENT           1 \
+                               CONFIG.INTF.vit_stream.SIGNAL.TSTRB.DECOUPLED         0 \
+                               CONFIG.INTF.vit_stream.SIGNAL.TSTRB.DECOUPLED_VALUE   0x0 \
+                               CONFIG.INTF.vit_stream.SIGNAL.TSTRB.WIDTH             8 \
+                               CONFIG.INTF.vit_stream.SIGNAL.TSTRB.DIRECTION         s \
+                               CONFIG.INTF.vit_stream.SIGNAL.TSTRB.RESOURCE          infer \
+                               CONFIG.INTF.vit_stream.SIGNAL.TSTRB.MANAGEMENT        auto \
+                               CONFIG.INTF.vit_stream.SIGNAL.TKEEP.PRESENT           1 \
+                               CONFIG.INTF.vit_stream.SIGNAL.TKEEP.DECOUPLED         0 \
+                               CONFIG.INTF.vit_stream.SIGNAL.TKEEP.DECOUPLED_VALUE   0x0 \
+                               CONFIG.INTF.vit_stream.SIGNAL.TKEEP.WIDTH             8 \
+                               CONFIG.INTF.vit_stream.SIGNAL.TKEEP.DIRECTION         s \
+                               CONFIG.INTF.vit_stream.SIGNAL.TKEEP.RESOURCE          infer \
+                               CONFIG.INTF.vit_stream.SIGNAL.TKEEP.MANAGEMENT        auto \
+] [get_ips adas_fault_tolerant_bd_dfx_decoupler_0_0]
+

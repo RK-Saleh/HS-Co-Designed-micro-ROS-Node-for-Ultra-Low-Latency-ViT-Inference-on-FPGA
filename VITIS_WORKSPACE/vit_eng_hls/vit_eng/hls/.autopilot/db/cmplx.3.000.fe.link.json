@@ -1,0 +1,80 @@
+{
+  "0": {
+    "basicblocks": 54,
+    "calls": "",
+    "control_depth": 1,
+    "def_use_depth": 4,
+    "file": "vit_eng.cpp",
+    "fileloc": 11,
+    "instructions": 539,
+    "loads": {
+      "L": 14
+    },
+    "memory_accesses": 18,
+    "name": "vit_eng",
+    "stores": {
+      "L": 14
+    },
+    "total_instructions": 2736
+  },
+  "1": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 0,
+    "file": "vit_weights_layer0.h",
+    "fileloc": 21,
+    "instructions": 36865,
+    "memory_accesses": 0,
+    "name": "__cxx_global_var_init.2",
+    "total_instructions": 663553
+  },
+  "2": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 0,
+    "file": "vit_weights_layer0.h",
+    "fileloc": 17,
+    "instructions": 36865,
+    "memory_accesses": 0,
+    "name": "__cxx_global_var_init.1",
+    "total_instructions": 663553
+  },
+  "3": {
+    "basicblocks": 1,
+    "calls": "4 2 1 5",
+    "control_depth": 0,
+    "def_use_depth": 0,
+    "file": "vit_eng.pp.0.cpp",
+    "fileloc": 0,
+    "instructions": 5,
+    "memory_accesses": 0,
+    "name": "",
+    "total_instructions": 2654217
+  },
+  "4": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 0,
+    "file": "vit_weights_layer0.h",
+    "fileloc": 13,
+    "instructions": 36865,
+    "memory_accesses": 0,
+    "name": "__cxx_global_var_init",
+    "total_instructions": 663553
+  },
+  "5": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 0,
+    "file": "vit_weights_layer0.h",
+    "fileloc": 25,
+    "instructions": 36865,
+    "memory_accesses": 0,
+    "name": "__cxx_global_var_init.3",
+    "total_instructions": 663553
+  }
+}

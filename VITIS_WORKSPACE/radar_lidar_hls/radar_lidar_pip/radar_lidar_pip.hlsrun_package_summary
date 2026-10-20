@@ -1,0 +1,156 @@
+<ENTRY>
+{
+ "thisFile": "F:/Thesis\\VITIS_WORKSPACE\\radar_lidar_hls\\radar_lidar_pip\\radar_lidar_pip.hlsrun_package_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "10/15/26 20:46:22",
+ "timestampMillis": "1792089982903",
+ "buildStep": {
+  "cmdId": "5792c1c1-3e72-4482-92e2-871dd8bb2bcb",
+  "name": "vitis-run",
+  "logFile": "F:/Thesis\\VITIS_WORKSPACE\\radar_lidar_hls\\radar_lidar_pip\\logs\\radar_lidar_pip.steps.log",
+  "commandLine": "D:/Xilinx/2025.1/Vitis/bin/unwrapped/win64.o/vitis-run.exe  --mode hls --package --config F:\\Thesis\\VITIS_WORKSPACE\\radar_lidar_hls\\hls_config.cfg --work_dir radar_lidar_pip ",
+  "args": [
+   "--mode",
+   "hls",
+   "--package",
+   "--config",
+   "F:\\Thesis\\VITIS_WORKSPACE\\radar_lidar_hls\\hls_config.cfg",
+   "--work_dir",
+   "radar_lidar_pip"
+  ],
+  "iniFiles": [],
+  "cwd": "F:\\Thesis\\VITIS_WORKSPACE\\radar_lidar_hls"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "10/15/26 20:46:22",
+ "timestampMillis": "1792089982903",
+ "status": {
+  "cmdId": "5792c1c1-3e72-4482-92e2-871dd8bb2bcb",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "10/15/26 20:46:26",
+ "timestampMillis": "1792089986117",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_IP",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "radar_lidar_pip",
+     "file": "F:/Thesis\\VITIS_WORKSPACE\\radar_lidar_hls\\radar_lidar_pip\\radar_lidar_pip.zip",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "D:/ViT\\hls_vit_export\\radar_lidar_pip.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2025.1"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "10/15/26 20:46:26",
+ "timestampMillis": "1792089986118",
+ "buildStep": {
+  "cmdId": "1380201f-a14f-437e-b122-70dff97466a8",
+  "name": "",
+  "logFile": "F:/Thesis\\VITIS_WORKSPACE\\radar_lidar_hls\\radar_lidar_pip\\hls\\hls.log",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "F:\\Thesis\\VITIS_WORKSPACE\\radar_lidar_hls"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "10/15/26 20:46:26",
+ "timestampMillis": "1792089986118",
+ "status": {
+  "cmdId": "1380201f-a14f-437e-b122-70dff97466a8",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "10/15/26 20:46:48",
+ "timestampMillis": "1792090008383",
+ "status": {
+  "cmdId": "1380201f-a14f-437e-b122-70dff97466a8",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "10/15/26 20:46:48",
+ "timestampMillis": "1792090008551",
+ "status": {
+  "cmdId": "5792c1c1-3e72-4482-92e2-871dd8bb2bcb",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "10/15/26 20:46:48",
+ "timestampMillis": "1792090008555",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "10/15/26 20:46:48",
+ "timestampMillis": "1792090008556",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

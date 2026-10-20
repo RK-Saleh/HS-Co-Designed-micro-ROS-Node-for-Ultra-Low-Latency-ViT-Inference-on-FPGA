@@ -1,0 +1,13 @@
+{
+  "name": "radar_lidar_hls",
+  "type": "HLS",
+  "configuration": {
+    "componentType": "HLS",
+    "configFiles": [
+      "hls_config.cfg"
+    ],
+    "work_dir": "radar_lidar_pip"
+  },
+  "useSysrootToolchain": false,
+  "template": "empty_hls_component"
+}

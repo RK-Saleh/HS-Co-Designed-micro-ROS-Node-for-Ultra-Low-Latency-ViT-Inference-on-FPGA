@@ -1,0 +1,572 @@
+<profile>
+    <ReportVersion>
+        <Version>2025.1</Version>
+    </ReportVersion>
+    <UserAssignments>
+        <unit>ns</unit>
+        <ProductFamily>zynquplus</ProductFamily>
+        <Part>xck26-sfvc784-2LV-c</Part>
+        <TopModelName>radar_lidar_pip</TopModelName>
+        <TargetClockPeriod>5.00</TargetClockPeriod>
+        <ClockUncertainty>1.35</ClockUncertainty>
+        <FlowTarget>vivado</FlowTarget>
+    </UserAssignments>
+    <PerformanceEstimates>
+        <PipelineType>no</PipelineType>
+        <SummaryOfTimingAnalysis>
+            <unit>ns</unit>
+            <EstimatedClockPeriod>2.002</EstimatedClockPeriod>
+        </SummaryOfTimingAnalysis>
+        <SummaryOfOverallLatency>
+            <unit>clock cycles</unit>
+            <Best-caseLatency>1</Best-caseLatency>
+            <Average-caseLatency>11</Average-caseLatency>
+            <Worst-caseLatency>37</Worst-caseLatency>
+            <Best-caseRealTimeLatency>5.000 ns</Best-caseRealTimeLatency>
+            <Average-caseRealTimeLatency>55.000 ns</Average-caseRealTimeLatency>
+            <Worst-caseRealTimeLatency>0.185 us</Worst-caseRealTimeLatency>
+            <Interval-min>2</Interval-min>
+            <Interval-max>38</Interval-max>
+            <PerformancePragma>-</PerformancePragma>
+        </SummaryOfOverallLatency>
+        <SummaryOfViolations>
+            <IssueType>-</IssueType>
+            <ViolationType>-</ViolationType>
+            <SourceLocation>D:/ViT/hls_vit_export/radar_lidar_pip.cpp:14</SourceLocation>
+        </SummaryOfViolations>
+    </PerformanceEstimates>
+    <AreaEstimates>
+        <Resources>
+            <FF>79</FF>
+            <LUT>360</LUT>
+            <BRAM_18K>0</BRAM_18K>
+            <DSP>0</DSP>
+            <URAM>0</URAM>
+        </Resources>
+        <AvailableResources>
+            <BRAM_18K>288</BRAM_18K>
+            <DSP>1248</DSP>
+            <FF>234240</FF>
+            <LUT>117120</LUT>
+            <URAM>64</URAM>
+        </AvailableResources>
+    </AreaEstimates>
+    <InterfaceSummary>
+        <RtlPorts>
+            <name>ap_clk</name>
+            <Object>radar_lidar_pip</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_none</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_rst_n</name>
+            <Object>radar_lidar_pip</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_none</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axis_rad_TDATA</name>
+            <Object>s_axis_rad_V_data_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>in</Dir>
+            <Bits>64</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axis_rad_TVALID</name>
+            <Object>s_axis_rad_V_dest_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axis_rad_TREADY</name>
+            <Object>s_axis_rad_V_dest_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axis_rad_TDEST</name>
+            <Object>s_axis_rad_V_dest_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axis_rad_TKEEP</name>
+            <Object>s_axis_rad_V_keep_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>in</Dir>
+            <Bits>8</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axis_rad_TSTRB</name>
+            <Object>s_axis_rad_V_strb_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>in</Dir>
+            <Bits>8</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axis_rad_TUSER</name>
+            <Object>s_axis_rad_V_user_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axis_rad_TLAST</name>
+            <Object>s_axis_rad_V_last_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axis_rad_TID</name>
+            <Object>s_axis_rad_V_id_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axis_det_TDATA</name>
+            <Object>m_axis_det_V_data_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>out</Dir>
+            <Bits>64</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axis_det_TVALID</name>
+            <Object>m_axis_det_V_dest_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axis_det_TREADY</name>
+            <Object>m_axis_det_V_dest_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axis_det_TDEST</name>
+            <Object>m_axis_det_V_dest_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axis_det_TKEEP</name>
+            <Object>m_axis_det_V_keep_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>out</Dir>
+            <Bits>8</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axis_det_TSTRB</name>
+            <Object>m_axis_det_V_strb_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>out</Dir>
+            <Bits>8</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axis_det_TUSER</name>
+            <Object>m_axis_det_V_user_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axis_det_TLAST</name>
+            <Object>m_axis_det_V_last_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>m_axis_det_TID</name>
+            <Object>m_axis_det_V_id_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+    </InterfaceSummary>
+    <RTLDesignHierarchy>
+        <TopModule MAX_DEPTH="3">
+            <ModuleName>radar_lidar_pip</ModuleName>
+            <InstancesList>
+                <Instance>
+                    <InstName>grp_radar_lidar_pip_Pipeline_point_filter_loop_fu_139</InstName>
+                    <ModuleName>radar_lidar_pip_Pipeline_point_filter_loop</ModuleName>
+                    <IsCompInst>true</IsCompInst>
+                    <ID>139</ID>
+                    <BindInstances>above_ground_fu_190_p2 icmp_ln41_fu_196_p2 icmp_ln41_1_fu_202_p2 valid_range_fu_208_p2 icmp_ln43_fu_214_p2 icmp_ln43_1_fu_220_p2 or_ln43_fu_226_p2 or_ln43_1_fu_232_p2 select_ln43_fu_238_p3 select_ln43_1_fu_246_p3 closest_vel_dms_3_fu_254_p3 min_dist_cm_3_fu_263_p3 i_3_fu_272_p2 or_cond_demorgan_fu_290_p2</BindInstances>
+                </Instance>
+            </InstancesList>
+            <BindInstances>icmp_ln54_fu_165_p2 icmp_ln56_fu_171_p2 alert_class_fu_181_p3</BindInstances>
+        </TopModule>
+    </RTLDesignHierarchy>
+    <ModuleInformation>
+        <Module>
+            <Name>radar_lidar_pip_Pipeline_point_filter_loop</Name>
+            <Loops>
+                <point_filter_loop/>
+            </Loops>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>5.00</TargetClockPeriod>
+                    <ClockUncertainty>1.35</ClockUncertainty>
+                    <EstimatedClockPeriod>2.002</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>2</Best-caseLatency>
+                    <Average-caseLatency>17</Average-caseLatency>
+                    <Worst-caseLatency>33</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>10.000 ns</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>85.000 ns</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>0.165 us</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>1 ~ 32</PipelineInitiationInterval>
+                    <PipelineType>loop auto-rewind stp (delay=0 clock cycles(s))</PipelineType>
+                    <PerformancePragma>-</PerformancePragma>
+                </SummaryOfOverallLatency>
+                <SummaryOfLoopLatency>
+                    <point_filter_loop>
+                        <Name>point_filter_loop</Name>
+                        <Slack>3.65</Slack>
+                        <TripCount>
+                            <range>
+                                <min>0</min>
+                                <max>32</max>
+                            </range>
+                        </TripCount>
+                        <isPerfectNested>0</isPerfectNested>
+                        <Latency>0 ~ 31</Latency>
+                        <AbsoluteTimeLatency>0 ns ~ 0.155 us</AbsoluteTimeLatency>
+                        <PipelineII>1</PipelineII>
+                        <PipelineDepth>1</PipelineDepth>
+                        <PipelineType>yes</PipelineType>
+                        <PerformancePragma>-</PerformancePragma>
+                        <InstanceList/>
+                    </point_filter_loop>
+                </SummaryOfLoopLatency>
+                <SummaryOfViolations>
+                    <IssueType>-</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>D:/ViT/hls_vit_export/radar_lidar_pip.cpp:24</SourceLocation>
+                    <SummaryOfLoopViolations>
+                        <point_filter_loop>
+                            <Name>point_filter_loop</Name>
+                            <IssueType>-</IssueType>
+                            <ViolationType>-</ViolationType>
+                            <SourceLocation>D:/ViT/hls_vit_export/radar_lidar_pip.cpp:43</SourceLocation>
+                        </point_filter_loop>
+                    </SummaryOfLoopViolations>
+                </SummaryOfViolations>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <FF>40</FF>
+                    <AVAIL_FF>234240</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>258</LUT>
+                    <AVAIL_LUT>117120</AVAIL_LUT>
+                    <UTIL_LUT>~0</UTIL_LUT>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>288</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <DSP>0</DSP>
+                    <AVAIL_DSP>1248</AVAIL_DSP>
+                    <UTIL_DSP>0</UTIL_DSP>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>64</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op setlt" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="point_filter_loop" OPTYPE="setlt" PRAGMA="" RTLNAME="above_ground_fu_190_p2" SOURCE="D:/ViT/hls_vit_export/radar_lidar_pip.cpp:40" STORAGESUBTYPE="" URAM="0" VARIABLE="above_ground" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op setgt" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="point_filter_loop" OPTYPE="setgt" PRAGMA="" RTLNAME="icmp_ln41_fu_196_p2" SOURCE="D:/ViT/hls_vit_export/radar_lidar_pip.cpp:41" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln41" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op setlt" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="point_filter_loop" OPTYPE="setlt" PRAGMA="" RTLNAME="icmp_ln41_1_fu_202_p2" SOURCE="D:/ViT/hls_vit_export/radar_lidar_pip.cpp:41" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln41_1" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op and" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="point_filter_loop" OPTYPE="and" PRAGMA="" RTLNAME="valid_range_fu_208_p2" SOURCE="D:/ViT/hls_vit_export/radar_lidar_pip.cpp:41" STORAGESUBTYPE="" URAM="0" VARIABLE="valid_range" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op setlt" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="point_filter_loop" OPTYPE="setlt" PRAGMA="" RTLNAME="icmp_ln43_fu_214_p2" SOURCE="D:/ViT/hls_vit_export/radar_lidar_pip.cpp:43" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln43" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op setgt" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="point_filter_loop" OPTYPE="setgt" PRAGMA="" RTLNAME="icmp_ln43_1_fu_220_p2" SOURCE="D:/ViT/hls_vit_export/radar_lidar_pip.cpp:43" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln43_1" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op or" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="point_filter_loop" OPTYPE="or" PRAGMA="" RTLNAME="or_ln43_fu_226_p2" SOURCE="D:/ViT/hls_vit_export/radar_lidar_pip.cpp:43" STORAGESUBTYPE="" URAM="0" VARIABLE="or_ln43" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op or" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="point_filter_loop" OPTYPE="or" PRAGMA="" RTLNAME="or_ln43_1_fu_232_p2" SOURCE="D:/ViT/hls_vit_export/radar_lidar_pip.cpp:43" STORAGESUBTYPE="" URAM="0" VARIABLE="or_ln43_1" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="point_filter_loop" OPTYPE="select" PRAGMA="" RTLNAME="select_ln43_fu_238_p3" SOURCE="D:/ViT/hls_vit_export/radar_lidar_pip.cpp:43" STORAGESUBTYPE="" URAM="0" VARIABLE="select_ln43" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="point_filter_loop" OPTYPE="select" PRAGMA="" RTLNAME="select_ln43_1_fu_246_p3" SOURCE="D:/ViT/hls_vit_export/radar_lidar_pip.cpp:43" STORAGESUBTYPE="" URAM="0" VARIABLE="select_ln43_1" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="point_filter_loop" OPTYPE="select" PRAGMA="" RTLNAME="closest_vel_dms_3_fu_254_p3" SOURCE="D:/ViT/hls_vit_export/radar_lidar_pip.cpp:43" STORAGESUBTYPE="" URAM="0" VARIABLE="closest_vel_dms_3" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="point_filter_loop" OPTYPE="select" PRAGMA="" RTLNAME="min_dist_cm_3_fu_263_p3" SOURCE="D:/ViT/hls_vit_export/radar_lidar_pip.cpp:43" STORAGESUBTYPE="" URAM="0" VARIABLE="min_dist_cm_3" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="point_filter_loop" OPTYPE="add" PRAGMA="" RTLNAME="i_3_fu_272_p2" SOURCE="D:/ViT/hls_vit_export/radar_lidar_pip.cpp:29" STORAGESUBTYPE="" URAM="0" VARIABLE="i_3" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op or" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="point_filter_loop" OPTYPE="or" PRAGMA="" RTLNAME="or_cond_demorgan_fu_290_p2" SOURCE="D:/ViT/hls_vit_export/radar_lidar_pip.cpp:29" STORAGESUBTYPE="" URAM="0" VARIABLE="or_cond_demorgan" VISIBLE="false"/>
+            </BindNodes>
+        </Module>
+        <Module>
+            <Name>radar_lidar_pip</Name>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>5.00</TargetClockPeriod>
+                    <ClockUncertainty>1.35</ClockUncertainty>
+                    <EstimatedClockPeriod>2.002</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>1</Best-caseLatency>
+                    <Average-caseLatency>11</Average-caseLatency>
+                    <Worst-caseLatency>37</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>5.000 ns</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>55.000 ns</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>0.185 us</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>2 ~ 38</PipelineInitiationInterval>
+                    <PipelineType>no</PipelineType>
+                    <PerformancePragma>-</PerformancePragma>
+                </SummaryOfOverallLatency>
+                <SummaryOfViolations>
+                    <IssueType>-</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>D:/ViT/hls_vit_export/radar_lidar_pip.cpp:14</SourceLocation>
+                </SummaryOfViolations>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <FF>79</FF>
+                    <AVAIL_FF>234240</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>360</LUT>
+                    <AVAIL_LUT>117120</AVAIL_LUT>
+                    <UTIL_LUT>~0</UTIL_LUT>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>288</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <DSP>0</DSP>
+                    <AVAIL_DSP>1248</AVAIL_DSP>
+                    <UTIL_DSP>0</UTIL_DSP>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>64</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op setlt" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="setlt" PRAGMA="" RTLNAME="icmp_ln54_fu_165_p2" SOURCE="D:/ViT/hls_vit_export/radar_lidar_pip.cpp:54" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln54" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op setlt" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="setlt" PRAGMA="" RTLNAME="icmp_ln56_fu_171_p2" SOURCE="D:/ViT/hls_vit_export/radar_lidar_pip.cpp:56" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln56" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="" OPTYPE="select" PRAGMA="" RTLNAME="alert_class_fu_181_p3" SOURCE="D:/ViT/hls_vit_export/radar_lidar_pip.cpp:54" STORAGESUBTYPE="" URAM="0" VARIABLE="alert_class" VISIBLE="false"/>
+            </BindNodes>
+        </Module>
+    </ModuleInformation>
+    <FIFOInformation/>
+    <UserConfigCommands/>
+    <Args>
+        <Arg ArgName="s_axis_rad" index="0" direction="in" srcType="stream&lt;hls::axis&lt;ap_uint&lt;64&gt;, 1, 1, 1, '8', false&gt;, 0&gt;&amp;" srcSize="128">
+            <hwRefs>
+                <hwRef type="interface" interface="s_axis_rad" name="" usage="data" direction="in"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="m_axis_det" index="1" direction="out" srcType="stream&lt;hls::axis&lt;ap_uint&lt;64&gt;, 1, 1, 1, '8', false&gt;, 0&gt;&amp;" srcSize="128">
+            <hwRefs>
+                <hwRef type="interface" interface="m_axis_det" name="" usage="data" direction="out"/>
+            </hwRefs>
+        </Arg>
+    </Args>
+    <Interfaces>
+        <Interface InterfaceName="ap_clk" type="clock" busTypeName="clock" mode="slave">
+            <busParams>
+                <busParam busParamName="ASSOCIATED_BUSIF">s_axis_rad:m_axis_det</busParam>
+                <busParam busParamName="ASSOCIATED_RESET">ap_rst_n</busParam>
+            </busParams>
+            <portMaps>
+                <portMap portMapName="ap_clk">CLK</portMap>
+            </portMaps>
+            <ports>
+                <port>ap_clk</port>
+            </ports>
+        </Interface>
+        <Interface InterfaceName="ap_rst_n" type="reset" busTypeName="reset" mode="slave">
+            <busParams>
+                <busParam busParamName="POLARITY">ACTIVE_LOW</busParam>
+            </busParams>
+            <portMaps>
+                <portMap portMapName="ap_rst_n">RST</portMap>
+            </portMaps>
+            <ports>
+                <port>ap_rst_n</port>
+            </ports>
+        </Interface>
+        <Interface InterfaceName="s_axis_rad" type="axi4stream" busTypeName="axis" mode="slave" direction="in" dataWidth="64" portPrefix="s_axis_rad_">
+            <ports>
+                <port>s_axis_rad_TDATA</port>
+                <port>s_axis_rad_TDEST</port>
+                <port>s_axis_rad_TID</port>
+                <port>s_axis_rad_TKEEP</port>
+                <port>s_axis_rad_TLAST</port>
+                <port>s_axis_rad_TREADY</port>
+                <port>s_axis_rad_TSTRB</port>
+                <port>s_axis_rad_TUSER</port>
+                <port>s_axis_rad_TVALID</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="axis" register_option="1" register_mode="both" argName="s_axis_rad"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="m_axis_det" type="axi4stream" busTypeName="axis" mode="master" direction="out" dataWidth="64" portPrefix="m_axis_det_">
+            <ports>
+                <port>m_axis_det_TDATA</port>
+                <port>m_axis_det_TDEST</port>
+                <port>m_axis_det_TID</port>
+                <port>m_axis_det_TKEEP</port>
+                <port>m_axis_det_TLAST</port>
+                <port>m_axis_det_TREADY</port>
+                <port>m_axis_det_TSTRB</port>
+                <port>m_axis_det_TUSER</port>
+                <port>m_axis_det_TVALID</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="axis" register_option="1" register_mode="both" argName="m_axis_det"/>
+            </constraints>
+        </Interface>
+    </Interfaces>
+    <ReportHWInterface>
+        <section name="HW Interfaces" level="0">
+            <item name="AXIS">
+                <table>
+                    <keys size="12">Interface, Direction, Register Mode, TDATA, TDEST, TID, TKEEP, TLAST, TREADY, TSTRB, TUSER, TVALID</keys>
+                    <column name="m_axis_det">out, both, 64, 1, 1, 8, 1, 1, 8, 1, 1</column>
+                    <column name="s_axis_rad">in, both, 64, 1, 1, 8, 1, 1, 8, 1, 1</column>
+                </table>
+            </item>
+            <item name="TOP LEVEL CONTROL">
+                <table>
+                    <keys size="3">Interface, Type, Ports</keys>
+                    <column name="ap_clk">clock, ap_clk</column>
+                    <column name="ap_rst_n">reset, ap_rst_n</column>
+                    <column name="ap_ctrl">ap_ctrl_none, </column>
+                </table>
+            </item>
+        </section>
+    </ReportHWInterface>
+    <ReportSWInterface>
+        <section name="SW I/O Information" level="0">
+            <item name="Top Function Arguments">
+                <table>
+                    <keys size="3">Argument, Direction, Datatype</keys>
+                    <column name="s_axis_rad">in, stream&lt;hls::axis&lt;ap_uint&lt;64&gt; 1 1 1 '8' false&gt; 0&gt;&amp;</column>
+                    <column name="m_axis_det">out, stream&lt;hls::axis&lt;ap_uint&lt;64&gt; 1 1 1 '8' false&gt; 0&gt;&amp;</column>
+                </table>
+            </item>
+            <item name="SW-to-HW Mapping">
+                <table>
+                    <keys size="3">Argument, HW Interface, HW Type</keys>
+                    <column name="s_axis_rad">s_axis_rad, interface</column>
+                    <column name="m_axis_det">m_axis_det, interface</column>
+                </table>
+            </item>
+        </section>
+    </ReportSWInterface>
+    <ResolutionUrl key="ZZZ">docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&amp;url=ug1448-hls-guidance&amp;resourceid=ZZZ.html</ResolutionUrl>
+    <ReportBurst>
+        <section name="M_AXI Burst Information" level="0" HEADER_NOTE="Note: All burst requests might be further partitioned into multiple requests during RTL generation based on max_read_burst_length or max_write_burst_length settings."/>
+    </ReportBurst>
+    <PragmaReport>
+        <Pragma type="interface" location="D:/ViT/hls_vit_export/radar_lidar_pip.cpp:18" status="valid" parentFunction="radar_lidar_pip" variable="s_axis_rad" isDirective="0" options="axis port=s_axis_rad"/>
+        <Pragma type="interface" location="D:/ViT/hls_vit_export/radar_lidar_pip.cpp:19" status="valid" parentFunction="radar_lidar_pip" variable="m_axis_det" isDirective="0" options="axis port=m_axis_det"/>
+        <Pragma type="interface" location="D:/ViT/hls_vit_export/radar_lidar_pip.cpp:20" status="valid" parentFunction="radar_lidar_pip" variable="return" isDirective="0" options="ap_ctrl_none port=return"/>
+        <Pragma type="pipeline" location="D:/ViT/hls_vit_export/radar_lidar_pip.cpp:30" status="valid" parentFunction="radar_lidar_pip" variable="" isDirective="0" options="ii=1"/>
+    </PragmaReport>
+</profile>
+

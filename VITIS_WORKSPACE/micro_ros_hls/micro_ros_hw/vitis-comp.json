@@ -1,0 +1,9 @@
+{
+  "name": "micro_ros_hw",
+  "type": "HLS",
+  "configuration": {
+    "componentType": "HLS",
+    "configFiles": ["..\/hls_config.cfg"],
+    "work_dir": "."
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "name": "vit_eng_hls",
+  "type": "HLS",
+  "configuration": {
+    "componentType": "HLS",
+    "configFiles": [
+      "hls_config.cfg"
+    ],
+    "work_dir": "vit_eng"
+  },
+  "useSysrootToolchain": false,
+  "template": "empty_hls_component"
+}

@@ -1,0 +1,121 @@
+
+
+================================================================
+== Synthesis Summary Report of 'radar_lidar_pip'
+================================================================
++ General Information: 
+    * Date:           Thu Oct 15 20:43:58 2026
+    * Version:        2025.1 (Build 6135595 on May 21 2025)
+    * Project:        radar_lidar_pip
+    * Solution:       hls (Vivado IP Flow Target)
+    * Product family: zynquplus
+    * Target device:  xck26-sfvc784-2LV-c
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +-----------------------------------------------+------+------+---------+---------+----------+---------+------+----------+------+----+----------+-----------+-----+
+    |                    Modules                    | Issue|      |      Latency      | Iteration|         | Trip |          |      |    |          |           |     |
+    |                    & Loops                    | Type | Slack| (cycles)|   (ns)  |  Latency | Interval| Count| Pipelined| BRAM | DSP|    FF    |    LUT    | URAM|
+    +-----------------------------------------------+------+------+---------+---------+----------+---------+------+----------+------+----+----------+-----------+-----+
+    |+ radar_lidar_pip                              |     -|  1.65|       37|  185.000|         -|       38|     -|        no|     -|   -|  79 (~0%)|  360 (~0%)|    -|
+    | + radar_lidar_pip_Pipeline_point_filter_loop  |     -|  1.65|       33|  165.000|         -|       32|     -|    rewind|     -|   -|  40 (~0%)|  258 (~0%)|    -|
+    |  o point_filter_loop                          |     -|  3.65|       31|  155.000|         1|        1|    32|       yes|     -|   -|         -|          -|    -|
+    +-----------------------------------------------+------+------+---------+---------+----------+---------+------+----------+------+----+----------+-----------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* AXIS
++------------+-----------+---------------+-------+-------+-----+-------+-------+--------+-------+-------+--------+
+| Interface  | Direction | Register Mode | TDATA | TDEST | TID | TKEEP | TLAST | TREADY | TSTRB | TUSER | TVALID |
++------------+-----------+---------------+-------+-------+-----+-------+-------+--------+-------+-------+--------+
+| m_axis_det | out       | both          | 64    | 1     | 1   | 8     | 1     | 1      | 8     | 1     | 1      |
+| s_axis_rad | in        | both          | 64    | 1     | 1   | 8     | 1     | 1      | 8     | 1     | 1      |
++------------+-----------+---------------+-------+-------+-----+-------+-------+--------+-------+-------+--------+
+
+* TOP LEVEL CONTROL
++-----------+--------------+----------+
+| Interface | Type         | Ports    |
++-----------+--------------+----------+
+| ap_clk    | clock        | ap_clk   |
+| ap_rst_n  | reset        | ap_rst_n |
+| ap_ctrl   | ap_ctrl_none |          |
++-----------+--------------+----------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++------------+-----------+---------------------------------------------------------+
+| Argument   | Direction | Datatype                                                |
++------------+-----------+---------------------------------------------------------+
+| s_axis_rad | in        | stream<hls::axis<ap_uint<64>, 1, 1, 1, '8', false>, 0>& |
+| m_axis_det | out       | stream<hls::axis<ap_uint<64>, 1, 1, 1, '8', false>, 0>& |
++------------+-----------+---------------------------------------------------------+
+
+* SW-to-HW Mapping
++------------+--------------+-----------+
+| Argument   | HW Interface | HW Type   |
++------------+--------------+-----------+
+| s_axis_rad | s_axis_rad   | interface |
+| m_axis_det | m_axis_det   | interface |
++------------+--------------+-----------+
+
+
+================================================================
+== M_AXI Burst Information
+================================================================
+ Note: All burst requests might be further partitioned into multiple requests during RTL generation based on max_read_burst_length or max_write_burst_length settings.
+
+
+================================================================
+== Bind Op Report
+================================================================
++-----------------------------------------------+-----+--------+-------------------+--------+----------+---------+
+| Name                                          | DSP | Pragma | Variable          | Op     | Impl     | Latency |
++-----------------------------------------------+-----+--------+-------------------+--------+----------+---------+
+| + radar_lidar_pip                             | 0   |        |                   |        |          |         |
+|   icmp_ln54_fu_165_p2                         |     |        | icmp_ln54         | setlt  | auto     | 0       |
+|   icmp_ln56_fu_171_p2                         |     |        | icmp_ln56         | setlt  | auto     | 0       |
+|   alert_class_fu_181_p3                       |     |        | alert_class       | select | auto_sel | 0       |
+|  + radar_lidar_pip_Pipeline_point_filter_loop | 0   |        |                   |        |          |         |
+|    above_ground_fu_190_p2                     |     |        | above_ground      | setlt  | auto     | 0       |
+|    icmp_ln41_fu_196_p2                        |     |        | icmp_ln41         | setgt  | auto     | 0       |
+|    icmp_ln41_1_fu_202_p2                      |     |        | icmp_ln41_1       | setlt  | auto     | 0       |
+|    valid_range_fu_208_p2                      |     |        | valid_range       | and    | auto     | 0       |
+|    icmp_ln43_fu_214_p2                        |     |        | icmp_ln43         | setlt  | auto     | 0       |
+|    icmp_ln43_1_fu_220_p2                      |     |        | icmp_ln43_1       | setgt  | auto     | 0       |
+|    or_ln43_fu_226_p2                          |     |        | or_ln43           | or     | auto     | 0       |
+|    or_ln43_1_fu_232_p2                        |     |        | or_ln43_1         | or     | auto     | 0       |
+|    select_ln43_fu_238_p3                      |     |        | select_ln43       | select | auto_sel | 0       |
+|    select_ln43_1_fu_246_p3                    |     |        | select_ln43_1     | select | auto_sel | 0       |
+|    closest_vel_dms_3_fu_254_p3                |     |        | closest_vel_dms_3 | select | auto_sel | 0       |
+|    min_dist_cm_3_fu_263_p3                    |     |        | min_dist_cm_3     | select | auto_sel | 0       |
+|    i_3_fu_272_p2                              |     |        | i_3               | add    | fabric   | 0       |
+|    or_cond_demorgan_fu_290_p2                 |     |        | or_cond_demorgan  | or     | auto     | 0       |
++-----------------------------------------------+-----+--------+-------------------+--------+----------+---------+
+
+
+================================================================
+== Storage Report
+================================================================
+  No bind storage info in design
+
+================================================================
+== Pragma Report
+================================================================
+* Valid Pragma Syntax
++-----------+--------------------------+-----------------------------------------------------------------------------+
+| Type      | Options                  | Location                                                                    |
++-----------+--------------------------+-----------------------------------------------------------------------------+
+| INTERFACE | axis port=s_axis_rad     | D:/ViT/hls_vit_export/radar_lidar_pip.cpp:18 in radar_lidar_pip, s_axis_rad |
+| INTERFACE | axis port=m_axis_det     | D:/ViT/hls_vit_export/radar_lidar_pip.cpp:19 in radar_lidar_pip, m_axis_det |
+| INTERFACE | ap_ctrl_none port=return | D:/ViT/hls_vit_export/radar_lidar_pip.cpp:20 in radar_lidar_pip, return     |
+| PIPELINE  | ii=1                     | D:/ViT/hls_vit_export/radar_lidar_pip.cpp:30 in radar_lidar_pip             |
++-----------+--------------------------+-----------------------------------------------------------------------------+
+
+

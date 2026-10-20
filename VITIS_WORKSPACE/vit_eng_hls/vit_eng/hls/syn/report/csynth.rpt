@@ -1,0 +1,307 @@
+
+
+================================================================
+== Synthesis Summary Report of 'vit_eng'
+================================================================
++ General Information: 
+    * Date:           Wed Oct 14 02:27:09 2026
+    * Version:        2025.1 (Build 6135595 on May 21 2025)
+    * Project:        vit_eng
+    * Solution:       hls (Vivado IP Flow Target)
+    * Product family: zynquplus
+    * Target device:  xck26-sfvc784-2LV-c
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +-------------------------------------+------+------+---------+-----------+----------+---------+------+----------+-----------+----------+------------+-----------+-----+
+    |               Modules               | Issue|      |       Latency       | Iteration|         | Trip |          |           |          |            |           |     |
+    |               & Loops               | Type | Slack| (cycles)|    (ns)   |  Latency | Interval| Count| Pipelined|   BRAM    |    DSP   |     FF     |    LUT    | URAM|
+    +-------------------------------------+------+------+---------+-----------+----------+---------+------+----------+-----------+----------+------------+-----------+-----+
+    |+ vit_eng                            |     -|  0.12|    13664|  6.832e+04|         -|    13665|     -|        no|  128 (44%)|   24 (1%)|  1063 (~0%)|  2681 (2%)|    -|
+    | + vit_eng_Pipeline_stream_in_loop   |     -|  2.01|       26|    130.000|         -|       25|     -|    rewind|          -|         -|    13 (~0%)|   73 (~0%)|    -|
+    |  o stream_in_loop                   |     -|  3.65|       24|    120.000|         2|        1|    24|       yes|          -|         -|           -|          -|    -|
+    | o qkv_row_loop                      |     -|  3.65|     6720|  3.360e+04|        35|        -|   192|        no|          -|         -|           -|          -|    -|
+    |  + vit_eng_Pipeline_qkv_tile_loop   |     -|  0.12|       31|    155.000|         -|       25|     -|    rewind|   96 (33%)|  12 (~0%)|   291 (~0%)|  935 (~0%)|    -|
+    |   o qkv_tile_loop                   |     -|  3.65|       29|    145.000|         6|        1|    24|       yes|          -|         -|           -|          -|    -|
+    | o proj_row_loop                     |     -|  3.65|     6912|  3.456e+04|        36|        -|   192|        no|          -|         -|           -|          -|    -|
+    |  + vit_eng_Pipeline_proj_tile_loop  |     -|  0.71|       33|    165.000|         -|       25|     -|    rewind|   32 (11%)|  12 (~0%)|   333 (~0%)|  456 (~0%)|    -|
+    |   o proj_tile_loop                  |     -|  3.65|       31|    155.000|         9|        1|    24|       yes|          -|         -|           -|          -|    -|
+    +-------------------------------------+------+------+---------+-----------+----------+---------+------+----------+-----------+----------+------------+-----------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* AXIS
++------------+-----------+---------------+-------+-------+-----+-------+-------+--------+-------+-------+--------+
+| Interface  | Direction | Register Mode | TDATA | TDEST | TID | TKEEP | TLAST | TREADY | TSTRB | TUSER | TVALID |
++------------+-----------+---------------+-------+-------+-----+-------+-------+--------+-------+-------+--------+
+| m_axis_det | out       | both          | 64    | 1     | 1   | 8     | 1     | 1      | 8     | 1     | 1      |
+| s_axis_img | in        | both          | 64    | 1     | 1   | 8     | 1     | 1      | 8     | 1     | 1      |
++------------+-----------+---------------+-------+-------+-----+-------+-------+--------+-------+-------+--------+
+
+* Other Ports
++-----------------+---------+-----------+----------+
+| Port            | Mode    | Direction | Bitwidth |
++-----------------+---------+-----------+----------+
+| heartbeat_pulse | ap_none | out       | 1        |
++-----------------+---------+-----------+----------+
+
+* TOP LEVEL CONTROL
++-----------+--------------+----------+
+| Interface | Type         | Ports    |
++-----------+--------------+----------+
+| ap_clk    | clock        | ap_clk   |
+| ap_rst_n  | reset        | ap_rst_n |
+| ap_ctrl   | ap_ctrl_none |          |
++-----------+--------------+----------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++-----------------+-----------+---------------------------------------------------------+
+| Argument        | Direction | Datatype                                                |
++-----------------+-----------+---------------------------------------------------------+
+| s_axis_img      | in        | stream<hls::axis<ap_uint<64>, 1, 1, 1, '8', false>, 0>& |
+| m_axis_det      | out       | stream<hls::axis<ap_uint<64>, 1, 1, 1, '8', false>, 0>& |
+| heartbeat_pulse | out       | pointer                                                 |
++-----------------+-----------+---------------------------------------------------------+
+
+* SW-to-HW Mapping
++-----------------+-----------------+-----------+
+| Argument        | HW Interface    | HW Type   |
++-----------------+-----------------+-----------+
+| s_axis_img      | s_axis_img      | interface |
+| m_axis_det      | m_axis_det      | interface |
+| heartbeat_pulse | heartbeat_pulse | port      |
++-----------------+-----------------+-----------+
+
+
+================================================================
+== Bind Op Report
+================================================================
++------------------------------------+-----+--------+--------------+--------+-----------+---------+
+| Name                               | DSP | Pragma | Variable     | Op     | Impl      | Latency |
++------------------------------------+-----+--------+--------------+--------+-----------+---------+
+| + vit_eng                          | 24  |        |              |        |           |         |
+|   icmp_ln52_fu_920_p2              |     |        | icmp_ln52    | seteq  | auto      | 0       |
+|   add_ln52_fu_926_p2               |     |        | add_ln52     | add    | fabric    | 0       |
+|   sub_ln59_fu_952_p2               |     |        | sub_ln59     | sub    | fabric    | 0       |
+|   icmp_ln72_fu_1102_p2             |     |        | icmp_ln72    | seteq  | auto      | 0       |
+|   i_3_fu_1108_p2                   |     |        | i_3          | add    | fabric    | 0       |
+|   sub_ln79_fu_1134_p2              |     |        | sub_ln79     | sub    | fabric    | 0       |
+|   icmp_ln83_fu_1206_p2             |     |        | icmp_ln83    | setlt  | auto      | 0       |
+|   icmp_ln83_1_fu_1211_p2           |     |        | icmp_ln83_1  | setgt  | auto      | 0       |
+|   and_ln83_fu_1217_p2              |     |        | and_ln83     | and    | auto      | 0       |
+|   max_score_1_fu_1226_p3           |     |        | max_score_1  | select | auto_sel  | 0       |
+|   best_class_4_fu_1234_p3          |     |        | best_class_4 | select | auto_sel  | 0       |
+|   bbox_dist_fu_1276_p2             |     |        | bbox_dist    | add    | fabric    | 0       |
+|   bbox_vel_fu_1290_p2              |     |        | bbox_vel     | add    | fabric    | 0       |
+|  + vit_eng_Pipeline_stream_in_loop | 0   |        |              |        |           |         |
+|    icmp_ln42_fu_218_p2             |     |        | icmp_ln42    | seteq  | auto      | 0       |
+|    add_ln42_fu_224_p2              |     |        | add_ln42     | add    | fabric    | 0       |
+|  + vit_eng_Pipeline_qkv_tile_loop  | 12  |        |              |        |           |         |
+|    icmp_ln54_fu_592_p2             |     |        | icmp_ln54    | setlt  | auto      | 0       |
+|    add_ln59_7_fu_621_p2            |     |        | add_ln59_7   | add    | fabric    | 0       |
+|    mul_8s_8s_16_1_1_U16            |     |        | mul_ln59     | mul    | auto      | 0       |
+|    mul_8s_8s_16_1_1_U17            |     |        | mul_ln60     | mul    | auto      | 0       |
+|    mul_8s_8s_16_1_1_U18            |     |        | mul_ln61     | mul    | auto      | 0       |
+|    mac_muladd_8s_8s_16s_16_4_1_U28 | 1   |        | mul_ln59_1   | mul    | dsp_slice | 3       |
+|    mac_muladd_8s_8s_16s_16_4_1_U29 | 1   |        | mul_ln60_1   | mul    | dsp_slice | 3       |
+|    mac_muladd_8s_8s_16s_16_4_1_U30 | 1   |        | mul_ln61_1   | mul    | dsp_slice | 3       |
+|    mul_8s_8s_16_1_1_U19            |     |        | mul_ln59_2   | mul    | auto      | 0       |
+|    mul_8s_8s_16_1_1_U20            |     |        | mul_ln60_2   | mul    | auto      | 0       |
+|    mul_8s_8s_15_1_1_U21            |     |        | mul_ln58     | mul    | auto      | 0       |
+|    mac_muladd_8s_8s_16s_16_4_1_U31 | 1   |        | mul_ln59_3   | mul    | dsp_slice | 3       |
+|    mac_muladd_8s_8s_16s_16_4_1_U32 | 1   |        | mul_ln60_3   | mul    | dsp_slice | 3       |
+|    mac_muladd_8s_7s_15s_15_4_1_U33 | 1   |        | mul_ln61_2   | mul    | dsp_slice | 3       |
+|    mul_8s_8s_16_1_1_U22            |     |        | mul_ln59_4   | mul    | auto      | 0       |
+|    mul_8s_8s_16_1_1_U23            |     |        | mul_ln60_4   | mul    | auto      | 0       |
+|    mac_muladd_8s_7s_16s_16_4_1_U34 | 1   |        | mul_ln61_3   | mul    | dsp_slice | 3       |
+|    mac_muladd_8s_7s_16s_16_4_1_U34 | 1   |        | sext_ln58    | sext   | dsp_slice | 3       |
+|    mac_muladd_8s_8s_16s_16_4_1_U35 | 1   |        | mul_ln59_5   | mul    | dsp_slice | 3       |
+|    mac_muladd_8s_8s_16s_16_4_1_U36 | 1   |        | mul_ln60_5   | mul    | dsp_slice | 3       |
+|    mul_8s_8s_16_1_1_U24            |     |        | mul_ln61_4   | mul    | auto      | 0       |
+|    mul_8s_8s_16_1_1_U25            |     |        | mul_ln59_6   | mul    | auto      | 0       |
+|    mul_8s_8s_16_1_1_U26            |     |        | mul_ln60_6   | mul    | auto      | 0       |
+|    mul_8s_8s_16_1_1_U27            |     |        | mul_ln61_5   | mul    | auto      | 0       |
+|    mac_muladd_8s_8s_16s_16_4_1_U37 | 1   |        | mul_ln59_7   | mul    | dsp_slice | 3       |
+|    mac_muladd_8s_8s_16s_16_4_1_U28 | 1   |        | add_ln59     | add    | dsp_slice | 3       |
+|    mac_muladd_8s_8s_16s_16_4_1_U31 | 1   |        | add_ln59_1   | add    | dsp_slice | 3       |
+|    add_ln59_2_fu_874_p2            |     |        | add_ln59_2   | add    | fabric    | 0       |
+|    mac_muladd_8s_8s_16s_16_4_1_U35 | 1   |        | add_ln59_3   | add    | dsp_slice | 3       |
+|    mac_muladd_8s_8s_16s_16_4_1_U37 | 1   |        | add_ln59_4   | add    | dsp_slice | 3       |
+|    add_ln59_5_fu_890_p2            |     |        | add_ln59_5   | add    | fabric    | 0       |
+|    add_ln59_6_fu_900_p2            |     |        | add_ln59_6   | add    | fabric    | 0       |
+|    acc_q_3_fu_1009_p2              |     |        | acc_q_3      | add    | fabric    | 0       |
+|    mac_muladd_8s_7s_16s_16_4_1_U38 | 1   |        | mul_ln60_7   | mul    | dsp_slice | 3       |
+|    mac_muladd_8s_7s_16s_16_4_1_U38 | 1   |        | sext_ln60_8  | sext   | dsp_slice | 3       |
+|    mac_muladd_8s_8s_16s_16_4_1_U29 | 1   |        | add_ln60     | add    | dsp_slice | 3       |
+|    mac_muladd_8s_8s_16s_16_4_1_U32 | 1   |        | add_ln60_1   | add    | dsp_slice | 3       |
+|    add_ln60_2_fu_912_p2            |     |        | add_ln60_2   | add    | fabric    | 0       |
+|    mac_muladd_8s_8s_16s_16_4_1_U36 | 1   |        | add_ln60_3   | add    | dsp_slice | 3       |
+|    mac_muladd_8s_7s_16s_16_4_1_U38 | 1   |        | add_ln60_4   | add    | dsp_slice | 3       |
+|    add_ln60_5_fu_928_p2            |     |        | add_ln60_5   | add    | fabric    | 0       |
+|    add_ln60_6_fu_938_p2            |     |        | add_ln60_6   | add    | fabric    | 0       |
+|    acc_k_3_fu_1018_p2              |     |        | acc_k_3      | add    | fabric    | 0       |
+|    mac_muladd_8s_8s_16s_16_4_1_U39 | 1   |        | mul_ln61_6   | mul    | dsp_slice | 3       |
+|    mac_muladd_8s_8s_16s_16_4_1_U30 | 1   |        | add_ln61     | add    | dsp_slice | 3       |
+|    mac_muladd_8s_7s_15s_15_4_1_U33 | 1   |        | add_ln61_1   | add    | dsp_slice | 3       |
+|    add_ln61_2_fu_950_p2            |     |        | add_ln61_2   | add    | fabric    | 0       |
+|    mac_muladd_8s_7s_16s_16_4_1_U34 | 1   |        | add_ln61_3   | add    | dsp_slice | 3       |
+|    mac_muladd_8s_8s_16s_16_4_1_U39 | 1   |        | add_ln61_4   | add    | dsp_slice | 3       |
+|    add_ln61_5_fu_966_p2            |     |        | add_ln61_5   | add    | fabric    | 0       |
+|    add_ln61_6_fu_976_p2            |     |        | add_ln61_6   | add    | fabric    | 0       |
+|    acc_v_3_fu_1027_p2              |     |        | acc_v_3      | add    | fabric    | 0       |
+|    add_ln54_fu_643_p2              |     |        | add_ln54     | add    | fabric    | 0       |
+|  + vit_eng_Pipeline_proj_tile_loop | 12  |        |              |        |           |         |
+|    icmp_ln74_fu_560_p2             |     |        | icmp_ln74    | setlt  | auto      | 0       |
+|    add_ln79_7_fu_634_p2            |     |        | add_ln79_7   | add    | fabric    | 0       |
+|    mac_muladd_8s_8s_8s_12_4_1_U89  | 1   |        | mul_ln78     | mul    | dsp_slice | 3       |
+|    mac_muladd_8s_8s_8s_12_4_1_U89  | 1   |        | add_ln78     | add    | dsp_slice | 3       |
+|    mul_8s_8s_16_1_1_U81            |     |        | mul_ln79     | mul    | auto      | 0       |
+|    mac_muladd_8s_8s_8s_12_4_1_U85  | 1   |        | mul_ln78_1   | mul    | dsp_slice | 3       |
+|    mac_muladd_8s_8s_8s_12_4_1_U85  | 1   |        | add_ln78_1   | add    | dsp_slice | 3       |
+|    mac_muladd_8s_8s_16s_16_4_1_U93 | 1   |        | mul_ln79_1   | mul    | dsp_slice | 3       |
+|    mac_muladd_8s_8s_8s_12_4_1_U90  | 1   |        | mul_ln78_2   | mul    | dsp_slice | 3       |
+|    mac_muladd_8s_8s_8s_12_4_1_U90  | 1   |        | add_ln78_2   | add    | dsp_slice | 3       |
+|    mul_8s_8s_16_1_1_U82            |     |        | mul_ln79_2   | mul    | auto      | 0       |
+|    mac_muladd_8s_8s_8s_12_4_1_U86  | 1   |        | mul_ln78_3   | mul    | dsp_slice | 3       |
+|    mac_muladd_8s_8s_8s_12_4_1_U86  | 1   |        | add_ln78_3   | add    | dsp_slice | 3       |
+|    mac_muladd_8s_8s_16s_16_4_1_U94 | 1   |        | mul_ln79_3   | mul    | dsp_slice | 3       |
+|    mac_muladd_8s_8s_8s_12_4_1_U91  | 1   |        | mul_ln78_4   | mul    | dsp_slice | 3       |
+|    mac_muladd_8s_8s_8s_12_4_1_U91  | 1   |        | add_ln78_4   | add    | dsp_slice | 3       |
+|    mul_8s_8s_16_1_1_U83            |     |        | mul_ln79_4   | mul    | auto      | 0       |
+|    mac_muladd_8s_8s_8s_12_4_1_U87  | 1   |        | mul_ln78_5   | mul    | dsp_slice | 3       |
+|    mac_muladd_8s_8s_8s_12_4_1_U87  | 1   |        | add_ln78_5   | add    | dsp_slice | 3       |
+|    mac_muladd_8s_8s_16s_16_4_1_U95 | 1   |        | mul_ln79_5   | mul    | dsp_slice | 3       |
+|    mac_muladd_8s_8s_8s_12_4_1_U92  | 1   |        | mul_ln78_6   | mul    | dsp_slice | 3       |
+|    mac_muladd_8s_8s_8s_12_4_1_U92  | 1   |        | add_ln78_6   | add    | dsp_slice | 3       |
+|    mul_8s_8s_16_1_1_U84            |     |        | mul_ln79_6   | mul    | auto      | 0       |
+|    mac_muladd_8s_8s_8s_12_4_1_U88  | 1   |        | mul_ln78_7   | mul    | dsp_slice | 3       |
+|    mac_muladd_8s_8s_8s_12_4_1_U88  | 1   |        | add_ln78_7   | add    | dsp_slice | 3       |
+|    mac_muladd_8s_8s_16s_16_4_1_U96 | 1   |        | mul_ln79_7   | mul    | dsp_slice | 3       |
+|    mac_muladd_8s_8s_16s_16_4_1_U93 | 1   |        | add_ln79     | add    | dsp_slice | 3       |
+|    mac_muladd_8s_8s_16s_16_4_1_U94 | 1   |        | add_ln79_1   | add    | dsp_slice | 3       |
+|    add_ln79_2_fu_877_p2            |     |        | add_ln79_2   | add    | fabric    | 0       |
+|    mac_muladd_8s_8s_16s_16_4_1_U95 | 1   |        | add_ln79_3   | add    | dsp_slice | 3       |
+|    mac_muladd_8s_8s_16s_16_4_1_U96 | 1   |        | add_ln79_4   | add    | dsp_slice | 3       |
+|    add_ln79_5_fu_893_p2            |     |        | add_ln79_5   | add    | fabric    | 0       |
+|    add_ln79_6_fu_903_p2            |     |        | add_ln79_6   | add    | fabric    | 0       |
+|    acc_o_1_fu_915_p2               |     |        | acc_o_1      | add    | fabric    | 0       |
+|    add_ln74_fu_588_p2              |     |        | add_ln74     | add    | fabric    | 0       |
++------------------------------------+-----+--------+--------------+--------+-----------+---------+
+
+
+================================================================
+== Storage Report
+================================================================
++------------------------------------+--------------+------+------+------+--------+--------------------+------+---------+------------------+
+| Name                               | Usage        | Type | BRAM | URAM | Pragma | Variable           | Impl | Latency | Bitwidth, Depth, |
+|                                    |              |      |      |      |        |                    |      |         | Banks            |
++------------------------------------+--------------+------+------+------+--------+--------------------+------+---------+------------------+
+| + vit_eng                          |              |      | 128  | 0    |        |                    |      |         |                  |
+|   token_in_U                       | ram_1p array |      |      |      |        | token_in           | auto | 1       | 8, 24, 1         |
+|   token_in_1_U                     | ram_1p array |      |      |      |        | token_in_1         | auto | 1       | 8, 24, 1         |
+|   token_in_2_U                     | ram_1p array |      |      |      |        | token_in_2         | auto | 1       | 8, 24, 1         |
+|   token_in_3_U                     | ram_1p array |      |      |      |        | token_in_3         | auto | 1       | 8, 24, 1         |
+|   token_in_4_U                     | ram_1p array |      |      |      |        | token_in_4         | auto | 1       | 8, 24, 1         |
+|   token_in_5_U                     | ram_1p array |      |      |      |        | token_in_5         | auto | 1       | 8, 24, 1         |
+|   token_in_6_U                     | ram_1p array |      |      |      |        | token_in_6         | auto | 1       | 8, 24, 1         |
+|   token_in_7_U                     | ram_1p array |      |      |      |        | token_in_7         | auto | 1       | 8, 24, 1         |
+|   q_vec_U                          | ram_1p array |      |      |      |        | q_vec              | auto | 1       | 8, 24, 1         |
+|   q_vec_1_U                        | ram_1p array |      |      |      |        | q_vec_1            | auto | 1       | 8, 24, 1         |
+|   q_vec_2_U                        | ram_1p array |      |      |      |        | q_vec_2            | auto | 1       | 8, 24, 1         |
+|   q_vec_3_U                        | ram_1p array |      |      |      |        | q_vec_3            | auto | 1       | 8, 24, 1         |
+|   q_vec_4_U                        | ram_1p array |      |      |      |        | q_vec_4            | auto | 1       | 8, 24, 1         |
+|   q_vec_5_U                        | ram_1p array |      |      |      |        | q_vec_5            | auto | 1       | 8, 24, 1         |
+|   q_vec_6_U                        | ram_1p array |      |      |      |        | q_vec_6            | auto | 1       | 8, 24, 1         |
+|   q_vec_7_U                        | ram_1p array |      |      |      |        | q_vec_7            | auto | 1       | 8, 24, 1         |
+|   k_vec_U                          | ram_1p array |      |      |      |        | k_vec              | auto | 1       | 8, 24, 1         |
+|   k_vec_1_U                        | ram_1p array |      |      |      |        | k_vec_1            | auto | 1       | 8, 24, 1         |
+|   k_vec_2_U                        | ram_1p array |      |      |      |        | k_vec_2            | auto | 1       | 8, 24, 1         |
+|   k_vec_3_U                        | ram_1p array |      |      |      |        | k_vec_3            | auto | 1       | 8, 24, 1         |
+|   k_vec_4_U                        | ram_1p array |      |      |      |        | k_vec_4            | auto | 1       | 8, 24, 1         |
+|   k_vec_5_U                        | ram_1p array |      |      |      |        | k_vec_5            | auto | 1       | 8, 24, 1         |
+|   k_vec_6_U                        | ram_1p array |      |      |      |        | k_vec_6            | auto | 1       | 8, 24, 1         |
+|   k_vec_7_U                        | ram_1p array |      |      |      |        | k_vec_7            | auto | 1       | 8, 24, 1         |
+|   v_vec_U                          | ram_1p array |      |      |      |        | v_vec              | auto | 1       | 8, 24, 1         |
+|   v_vec_1_U                        | ram_1p array |      |      |      |        | v_vec_1            | auto | 1       | 8, 24, 1         |
+|   v_vec_2_U                        | ram_1p array |      |      |      |        | v_vec_2            | auto | 1       | 8, 24, 1         |
+|   v_vec_3_U                        | ram_1p array |      |      |      |        | v_vec_3            | auto | 1       | 8, 24, 1         |
+|   v_vec_4_U                        | ram_1p array |      |      |      |        | v_vec_4            | auto | 1       | 8, 24, 1         |
+|   v_vec_5_U                        | ram_1p array |      |      |      |        | v_vec_5            | auto | 1       | 8, 24, 1         |
+|   v_vec_6_U                        | ram_1p array |      |      |      |        | v_vec_6            | auto | 1       | 8, 24, 1         |
+|   v_vec_7_U                        | ram_1p array |      |      |      |        | v_vec_7            | auto | 1       | 8, 24, 1         |
+|   attn_out_U                       | ram_1p array |      |      |      |        | attn_out           | auto | 1       | 8, 24, 1         |
+|   attn_out_1_U                     | ram_1p array |      |      |      |        | attn_out_1         | auto | 1       | 6, 24, 1         |
+|  + vit_eng_Pipeline_qkv_tile_loop  |              |      | 96   | 0    |        |                    |      |         |                  |
+|    p_ZL10W_QUERY_L0_0_U            | rom_1p       |      | 4    |      |        | p_ZL10W_QUERY_L0_0 | auto | 1       | 8, 4608, 1       |
+|    p_ZL8W_KEY_L0_0_U               | rom_1p       |      | 4    |      |        | p_ZL8W_KEY_L0_0    | auto | 1       | 8, 4608, 1       |
+|    p_ZL10W_VALUE_L0_0_U            | rom_1p       |      | 4    |      |        | p_ZL10W_VALUE_L0_0 | auto | 1       | 8, 4608, 1       |
+|    p_ZL10W_QUERY_L0_1_U            | rom_1p       |      | 4    |      |        | p_ZL10W_QUERY_L0_1 | auto | 1       | 8, 4608, 1       |
+|    p_ZL8W_KEY_L0_1_U               | rom_1p       |      | 4    |      |        | p_ZL8W_KEY_L0_1    | auto | 1       | 8, 4608, 1       |
+|    p_ZL10W_VALUE_L0_1_U            | rom_1p       |      | 4    |      |        | p_ZL10W_VALUE_L0_1 | auto | 1       | 8, 4608, 1       |
+|    p_ZL10W_QUERY_L0_2_U            | rom_1p       |      | 4    |      |        | p_ZL10W_QUERY_L0_2 | auto | 1       | 8, 4608, 1       |
+|    p_ZL8W_KEY_L0_2_U               | rom_1p       |      | 4    |      |        | p_ZL8W_KEY_L0_2    | auto | 1       | 8, 4608, 1       |
+|    p_ZL10W_VALUE_L0_2_U            | rom_1p       |      | 4    |      |        | p_ZL10W_VALUE_L0_2 | auto | 1       | 8, 4608, 1       |
+|    p_ZL10W_QUERY_L0_3_U            | rom_1p       |      | 4    |      |        | p_ZL10W_QUERY_L0_3 | auto | 1       | 8, 4608, 1       |
+|    p_ZL8W_KEY_L0_3_U               | rom_1p       |      | 4    |      |        | p_ZL8W_KEY_L0_3    | auto | 1       | 8, 4608, 1       |
+|    p_ZL10W_VALUE_L0_3_U            | rom_1p       |      | 4    |      |        | p_ZL10W_VALUE_L0_3 | auto | 1       | 7, 4608, 1       |
+|    p_ZL10W_QUERY_L0_4_U            | rom_1p       |      | 4    |      |        | p_ZL10W_QUERY_L0_4 | auto | 1       | 8, 4608, 1       |
+|    p_ZL8W_KEY_L0_4_U               | rom_1p       |      | 4    |      |        | p_ZL8W_KEY_L0_4    | auto | 1       | 8, 4608, 1       |
+|    p_ZL10W_VALUE_L0_4_U            | rom_1p       |      | 4    |      |        | p_ZL10W_VALUE_L0_4 | auto | 1       | 7, 4608, 1       |
+|    p_ZL10W_QUERY_L0_5_U            | rom_1p       |      | 4    |      |        | p_ZL10W_QUERY_L0_5 | auto | 1       | 8, 4608, 1       |
+|    p_ZL8W_KEY_L0_5_U               | rom_1p       |      | 4    |      |        | p_ZL8W_KEY_L0_5    | auto | 1       | 8, 4608, 1       |
+|    p_ZL10W_VALUE_L0_5_U            | rom_1p       |      | 4    |      |        | p_ZL10W_VALUE_L0_5 | auto | 1       | 8, 4608, 1       |
+|    p_ZL10W_QUERY_L0_6_U            | rom_1p       |      | 4    |      |        | p_ZL10W_QUERY_L0_6 | auto | 1       | 8, 4608, 1       |
+|    p_ZL8W_KEY_L0_6_U               | rom_1p       |      | 4    |      |        | p_ZL8W_KEY_L0_6    | auto | 1       | 8, 4608, 1       |
+|    p_ZL10W_VALUE_L0_6_U            | rom_1p       |      | 4    |      |        | p_ZL10W_VALUE_L0_6 | auto | 1       | 8, 4608, 1       |
+|    p_ZL10W_QUERY_L0_7_U            | rom_1p       |      | 4    |      |        | p_ZL10W_QUERY_L0_7 | auto | 1       | 8, 4608, 1       |
+|    p_ZL8W_KEY_L0_7_U               | rom_1p       |      | 4    |      |        | p_ZL8W_KEY_L0_7    | auto | 1       | 7, 4608, 1       |
+|    p_ZL10W_VALUE_L0_7_U            | rom_1p       |      | 4    |      |        | p_ZL10W_VALUE_L0_7 | auto | 1       | 8, 4608, 1       |
+|  + vit_eng_Pipeline_proj_tile_loop |              |      | 32   | 0    |        |                    |      |         |                  |
+|    p_ZL9W_PROJ_L0_0_U              | rom_1p       |      | 4    |      |        | p_ZL9W_PROJ_L0_0   | auto | 1       | 8, 4608, 1       |
+|    p_ZL9W_PROJ_L0_1_U              | rom_1p       |      | 4    |      |        | p_ZL9W_PROJ_L0_1   | auto | 1       | 8, 4608, 1       |
+|    p_ZL9W_PROJ_L0_2_U              | rom_1p       |      | 4    |      |        | p_ZL9W_PROJ_L0_2   | auto | 1       | 8, 4608, 1       |
+|    p_ZL9W_PROJ_L0_3_U              | rom_1p       |      | 4    |      |        | p_ZL9W_PROJ_L0_3   | auto | 1       | 8, 4608, 1       |
+|    p_ZL9W_PROJ_L0_4_U              | rom_1p       |      | 4    |      |        | p_ZL9W_PROJ_L0_4   | auto | 1       | 8, 4608, 1       |
+|    p_ZL9W_PROJ_L0_5_U              | rom_1p       |      | 4    |      |        | p_ZL9W_PROJ_L0_5   | auto | 1       | 8, 4608, 1       |
+|    p_ZL9W_PROJ_L0_6_U              | rom_1p       |      | 4    |      |        | p_ZL9W_PROJ_L0_6   | auto | 1       | 8, 4608, 1       |
+|    p_ZL9W_PROJ_L0_7_U              | rom_1p       |      | 4    |      |        | p_ZL9W_PROJ_L0_7   | auto | 1       | 8, 4608, 1       |
++------------------------------------+--------------+------+------+------+--------+--------------------+------+---------+------------------+
+
+
+================================================================
+== Pragma Report
+================================================================
+* Valid Pragma Syntax
++-----------------+-------------------------------------------+------------------------------------------------------------------+
+| Type            | Options                                   | Location                                                         |
++-----------------+-------------------------------------------+------------------------------------------------------------------+
+| INTERFACE       | axis port=s_axis_img                      | D:/ViT/hls_vit_export/vit_eng.cpp:16 in vit_eng, s_axis_img      |
+| INTERFACE       | axis port=m_axis_det                      | D:/ViT/hls_vit_export/vit_eng.cpp:17 in vit_eng, m_axis_det      |
+| INTERFACE       | ap_none port=heartbeat_pulse              | D:/ViT/hls_vit_export/vit_eng.cpp:18 in vit_eng, heartbeat_pulse |
+| INTERFACE       | ap_ctrl_none port=return                  | D:/ViT/hls_vit_export/vit_eng.cpp:19 in vit_eng, return          |
+| ARRAY_PARTITION | variable=token_in cyclic factor=8 dim=1   | D:/ViT/hls_vit_export/vit_eng.cpp:27 in vit_eng, token_in        |
+| ARRAY_PARTITION | variable=q_vec cyclic factor=8 dim=1      | D:/ViT/hls_vit_export/vit_eng.cpp:28 in vit_eng, q_vec           |
+| ARRAY_PARTITION | variable=k_vec cyclic factor=8 dim=1      | D:/ViT/hls_vit_export/vit_eng.cpp:29 in vit_eng, k_vec           |
+| ARRAY_PARTITION | variable=v_vec cyclic factor=8 dim=1      | D:/ViT/hls_vit_export/vit_eng.cpp:30 in vit_eng, v_vec           |
+| ARRAY_PARTITION | variable=attn_out cyclic factor=8 dim=1   | D:/ViT/hls_vit_export/vit_eng.cpp:31 in vit_eng, attn_out        |
+| ARRAY_PARTITION | variable=W_QUERY_L0 cyclic factor=8 dim=2 | D:/ViT/hls_vit_export/vit_eng.cpp:33 in vit_eng, W_QUERY_L0      |
+| ARRAY_PARTITION | variable=W_KEY_L0 cyclic factor=8 dim=2   | D:/ViT/hls_vit_export/vit_eng.cpp:34 in vit_eng, W_KEY_L0        |
+| ARRAY_PARTITION | variable=W_VALUE_L0 cyclic factor=8 dim=2 | D:/ViT/hls_vit_export/vit_eng.cpp:35 in vit_eng, W_VALUE_L0      |
+| ARRAY_PARTITION | variable=W_PROJ_L0 cyclic factor=8 dim=2  | D:/ViT/hls_vit_export/vit_eng.cpp:36 in vit_eng, W_PROJ_L0       |
+| PIPELINE        | ii=1                                      | D:/ViT/hls_vit_export/vit_eng.cpp:43 in vit_eng                  |
+| UNROLL          |                                           | D:/ViT/hls_vit_export/vit_eng.cpp:46 in vit_eng                  |
+| PIPELINE        | ii=1                                      | D:/ViT/hls_vit_export/vit_eng.cpp:55 in vit_eng                  |
+| UNROLL          |                                           | D:/ViT/hls_vit_export/vit_eng.cpp:57 in vit_eng                  |
+| PIPELINE        | ii=1                                      | D:/ViT/hls_vit_export/vit_eng.cpp:75 in vit_eng                  |
+| UNROLL          |                                           | D:/ViT/hls_vit_export/vit_eng.cpp:77 in vit_eng                  |
++-----------------+-------------------------------------------+------------------------------------------------------------------+
+
+

@@ -1,0 +1,3 @@
+relativeroot=F:/Thesis/VITIS_WORKSPACE/micro_ros_hls
+original_argv=--mode hls --package --config F:\Thesis\VITIS_WORKSPACE\micro_ros_hls\hls_config.cfg --work_dir micro_ros_hw 
+

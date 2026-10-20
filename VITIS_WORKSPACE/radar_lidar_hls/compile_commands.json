@@ -1,0 +1,27 @@
+[
+  {
+    "directory": "F:\\Thesis\\VITIS_WORKSPACE\\radar_lidar_hls",
+    "arguments": [
+      "D:\\Xilinx\\2025.1\\Vitis\\vcxx\\libexec\\clang++.exe",
+      "--sysroot=D:\\Xilinx\\2025.1\\Vitis\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "-fhls",
+      "-hls-syn-headers-dir=D:\\Xilinx\\2025.1\\Vitis\\common\\technology\\autopilot",
+      "-fhlstoplevel=radar_lidar_pip",
+      "-c",
+      "D:/ViT/hls_vit_export/radar_lidar_pip.cpp"
+    ],
+    "file": "D:/ViT/hls_vit_export/radar_lidar_pip.cpp"
+  },
+  {
+    "directory": "F:\\Thesis\\VITIS_WORKSPACE\\radar_lidar_hls",
+    "arguments": [
+      "D:\\Xilinx\\2025.1\\Vitis\\vcxx\\libexec\\clang++.exe",
+      "--sysroot=D:\\Xilinx\\2025.1\\Vitis\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "-fhls-tb",
+      "-hls-sim-headers-dir=D:\\Xilinx\\2025.1\\Vitis\\include",
+      "-c",
+      "D:/ViT/hls_vit_export/radar_lidar_pip_tb.cpp"
+    ],
+    "file": "D:/ViT/hls_vit_export/radar_lidar_pip_tb.cpp"
+  }
+]

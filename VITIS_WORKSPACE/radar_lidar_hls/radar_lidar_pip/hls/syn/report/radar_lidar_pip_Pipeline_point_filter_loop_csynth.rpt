@@ -1,0 +1,165 @@
+
+
+================================================================
+== Vitis HLS Report for 'radar_lidar_pip_Pipeline_point_filter_loop'
+================================================================
+* Date:           Thu Oct 15 20:43:57 2026
+
+* Version:        2025.1 (Build 6135595 on May 21 2025)
+* Project:        radar_lidar_pip
+* Solution:       hls (Vivado IP Flow Target)
+* Product family: zynquplus
+* Target device:  xck26-sfvc784-2LV-c
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  5.00 ns|  2.002 ns|     1.35 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+----------+-----+-----+------------------------------------------------+
+    |  Latency (cycles) |  Latency (absolute)  |  Interval |                    Pipeline                    |
+    |   min   |   max   |    min    |    max   | min | max |                      Type                      |
+    +---------+---------+-----------+----------+-----+-----+------------------------------------------------+
+    |        2|       33|  10.000 ns|  0.165 us|    1|   32|  loop auto-rewind stp (delay=0 clock cycles(s))|
+    +---------+---------+-----------+----------+-----+-----+------------------------------------------------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +---------------------+---------+---------+----------+-----------+-----------+--------+----------+
+        |                     |  Latency (cycles) | Iteration|  Initiation Interval  |  Trip  |          |
+        |      Loop Name      |   min   |   max   |  Latency |  achieved |   target  |  Count | Pipelined|
+        +---------------------+---------+---------+----------+-----------+-----------+--------+----------+
+        |- point_filter_loop  |        0|       31|         1|          1|          1|  0 ~ 32|       yes|
+        +---------------------+---------+---------+----------+-----------+-----------+--------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+------+--------+--------+-----+
+|       Name      | BRAM_18K|  DSP |   FF   |   LUT  | URAM|
++-----------------+---------+------+--------+--------+-----+
+|DSP              |        -|     -|       -|       -|    -|
+|Expression       |        -|     -|       0|     204|    -|
+|FIFO             |        -|     -|       -|       -|    -|
+|Instance         |        -|     -|       -|       -|    -|
+|Memory           |        -|     -|       -|       -|    -|
+|Multiplexer      |        -|     -|       0|      54|    -|
+|Register         |        -|     -|      40|       -|    -|
++-----------------+---------+------+--------+--------+-----+
+|Total            |        0|     0|      40|     258|    0|
++-----------------+---------+------+--------+--------+-----+
+|Available        |      288|  1248|  234240|  117120|   64|
++-----------------+---------+------+--------+--------+-----+
+|Utilization (%)  |        0|     0|      ~0|      ~0|    0|
++-----------------+---------+------+--------+--------+-----+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +----------------------------+----------+----+---+----+------------+------------+
+    |        Variable Name       | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +----------------------------+----------+----+---+----+------------+------------+
+    |i_3_fu_272_p2               |         +|   0|  0|  13|           6|           1|
+    |ap_block_pp0_stage0_01001   |       and|   0|  0|   2|           1|           1|
+    |valid_range_fu_208_p2       |       and|   0|  0|   2|           1|           1|
+    |above_ground_fu_190_p2      |      icmp|   0|  0|  23|          16|           8|
+    |icmp_ln41_1_fu_202_p2       |      icmp|   0|  0|  23|          16|          16|
+    |icmp_ln41_fu_196_p2         |      icmp|   0|  0|  23|          16|           6|
+    |icmp_ln43_1_fu_220_p2       |      icmp|   0|  0|  23|          16|           8|
+    |icmp_ln43_fu_214_p2         |      icmp|   0|  0|  23|          16|           9|
+    |or_cond_demorgan_fu_290_p2  |        or|   0|  0|   2|           1|           1|
+    |or_ln43_1_fu_232_p2         |        or|   0|  0|   2|           1|           1|
+    |or_ln43_fu_226_p2           |        or|   0|  0|   2|           1|           1|
+    |closest_vel_dms_1_out       |    select|   0|  0|  16|           1|          16|
+    |min_dist_cm_1_out           |    select|   0|  0|  16|           1|          16|
+    |select_ln43_1_fu_246_p3     |    select|   0|  0|  16|           1|          16|
+    |select_ln43_fu_238_p3       |    select|   0|  0|  16|           1|          16|
+    |ap_enable_pp0               |       xor|   0|  0|   2|           1|           2|
+    +----------------------------+----------+----+---+----+------------+------------+
+    |Total                       |          |   0|  0| 204|          96|         119|
+    +----------------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-------------------------+----+-----------+-----+-----------+
+    |           Name          | LUT| Input Size| Bits| Total Bits|
+    +-------------------------+----+-----------+-----+-----------+
+    |ap_done_int              |   9|          2|    1|          2|
+    |ap_enable_reg_pp0_iter1  |   9|          2|    1|          2|
+    |closest_vel_dms_fu_82    |   9|          2|   16|         32|
+    |i_fu_90                  |   9|          2|    5|         10|
+    |min_dist_cm_fu_86        |   9|          2|   16|         32|
+    |s_axis_rad_TDATA_blk_n   |   9|          2|    1|          2|
+    +-------------------------+----+-----------+-----+-----------+
+    |Total                    |  54|         12|   40|         80|
+    +-------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +-------------------------+----+----+-----+-----------+
+    |           Name          | FF | LUT| Bits| Const Bits|
+    +-------------------------+----+----+-----+-----------+
+    |ap_CS_fsm                |   1|   0|    1|          0|
+    |ap_done_reg              |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter1  |   1|   0|    1|          0|
+    |closest_vel_dms_fu_82    |  16|   0|   16|          0|
+    |i_fu_90                  |   5|   0|    5|          0|
+    |min_dist_cm_fu_86        |  16|   0|   16|          0|
+    +-------------------------+----+----+-----+-----------+
+    |Total                    |  40|   0|   40|          0|
+    +-------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++------------------------------+-----+-----+------------+--------------------------------------------+--------------+
+|           RTL Ports          | Dir | Bits|  Protocol  |                Source Object               |    C Type    |
++------------------------------+-----+-----+------------+--------------------------------------------+--------------+
+|ap_clk                        |   in|    1|  ap_ctrl_hs|  radar_lidar_pip_Pipeline_point_filter_loop|  return value|
+|ap_rst                        |   in|    1|  ap_ctrl_hs|  radar_lidar_pip_Pipeline_point_filter_loop|  return value|
+|ap_start                      |   in|    1|  ap_ctrl_hs|  radar_lidar_pip_Pipeline_point_filter_loop|  return value|
+|ap_done                       |  out|    1|  ap_ctrl_hs|  radar_lidar_pip_Pipeline_point_filter_loop|  return value|
+|ap_idle                       |  out|    1|  ap_ctrl_hs|  radar_lidar_pip_Pipeline_point_filter_loop|  return value|
+|ap_ready                      |  out|    1|  ap_ctrl_hs|  radar_lidar_pip_Pipeline_point_filter_loop|  return value|
+|s_axis_rad_TVALID             |   in|    1|        axis|                         s_axis_rad_V_data_V|       pointer|
+|s_axis_rad_TDATA              |   in|   64|        axis|                         s_axis_rad_V_data_V|       pointer|
+|s_axis_rad_TREADY             |  out|    1|        axis|                         s_axis_rad_V_dest_V|       pointer|
+|s_axis_rad_TDEST              |   in|    1|        axis|                         s_axis_rad_V_dest_V|       pointer|
+|s_axis_rad_TKEEP              |   in|    8|        axis|                         s_axis_rad_V_keep_V|       pointer|
+|s_axis_rad_TSTRB              |   in|    8|        axis|                         s_axis_rad_V_strb_V|       pointer|
+|s_axis_rad_TUSER              |   in|    1|        axis|                         s_axis_rad_V_user_V|       pointer|
+|s_axis_rad_TLAST              |   in|    1|        axis|                         s_axis_rad_V_last_V|       pointer|
+|s_axis_rad_TID                |   in|    1|        axis|                           s_axis_rad_V_id_V|       pointer|
+|closest_vel_dms_1_out         |  out|   16|      ap_vld|                       closest_vel_dms_1_out|       pointer|
+|closest_vel_dms_1_out_ap_vld  |  out|    1|      ap_vld|                       closest_vel_dms_1_out|       pointer|
+|min_dist_cm_1_out             |  out|   16|      ap_vld|                           min_dist_cm_1_out|       pointer|
+|min_dist_cm_1_out_ap_vld      |  out|    1|      ap_vld|                           min_dist_cm_1_out|       pointer|
++------------------------------+-----+-----+------------+--------------------------------------------+--------------+
+

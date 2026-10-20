@@ -1,0 +1,20 @@
+{
+    "0": {
+        "name": "micro_ros_hw",
+        "file": "micro_ros_hw.cpp",
+        "fileloc": "8",
+        "instructions": "44",
+        "total_instructions": "44",
+        "calls": "",
+        "basicblocks": "3",
+        "memory_accesses": "8",
+        "control_depth": "1",
+        "def_use_depth": "3",
+        "loads": {
+            "G": "1"
+        },
+        "stores": {
+            "G": "1"
+        }
+    }
+}

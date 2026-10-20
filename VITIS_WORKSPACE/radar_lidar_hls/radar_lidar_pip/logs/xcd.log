@@ -1,0 +1,75 @@
+10/15/26 20:43:05: Running xcd server. This server was built by gradle.
+10/15/26 20:43:05: Server was asked to start on port: '7744'
+10/15/26 20:43:05: Server is using token UUID: '3795405b-2b32-43a8-9c24-34091b264a7a'
+10/15/26 20:43:05: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+10/15/26 20:43:05: Attempting to start server on port '7744'
+10/15/26 20:43:05: Running Dispatch Server
+10/15/26 20:43:05: Version 2.2.0
+10/15/26 20:43:08: Dispatch Server: Accepted socket connection from client
+10/15/26 20:43:08: Starting Socket connection
+10/15/26 20:43:08: EXCHANGE_TOKEN received, server token: 3795405b-2b32-43a8-9c24-34091b264a7a, passed token: 3795405b-2b32-43a8-9c24-34091b264a7a
+10/15/26 20:43:08: DISPATCH_HANDLER: Adding handler from function makeHandler in library xv_system_diagram
+10/15/26 20:43:08: SESSION_MGR: creating session with session uuid: '65d43252-2da5-4630-880b-2e3aee4ac17c' and name 'vitis-run_compile_radar_lidar_pip'
+10/15/26 20:43:08: KERNEL_SVC: creating session with uuid: '65d43252-2da5-4630-880b-2e3aee4ac17c' and name 'vitis-run_compile_radar_lidar_pip'
+10/15/26 20:43:08: GUIDANCE_SMGR: creating guidance session with uuid: '65d43252-2da5-4630-880b-2e3aee4ac17c' and name 'vitis-run_compile_radar_lidar_pip'
+10/15/26 20:43:08: SYSTEM_DIAGRAM: creating session with uuid: '65d43252-2da5-4630-880b-2e3aee4ac17c' and name 'vitis-run_compile_radar_lidar_pip'
+10/15/26 20:43:16: Dispatch Server: Accepted socket connection from client
+10/15/26 20:43:16: Starting Socket connection
+10/15/26 20:43:26: SESSION_MGR: closing session for UUID '65d43252-2da5-4630-880b-2e3aee4ac17c' with name 'vitis-run_compile_radar_lidar_pip'
+10/15/26 20:43:26: KERNEL_SVC: closing session for UUID '65d43252-2da5-4630-880b-2e3aee4ac17c' with name 'vitis-run_compile_radar_lidar_pip'
+10/15/26 20:43:26: GUIDANCE_SMGR: closing session for UUID '65d43252-2da5-4630-880b-2e3aee4ac17c' with name 'vitis-run_compile_radar_lidar_pip'
+10/15/26 20:43:26: SYSTEM_DIAGRAM: closing session for UUID '65d43252-2da5-4630-880b-2e3aee4ac17c' with name 'vitis-run_compile_radar_lidar_pip'
+10/15/26 20:43:26: STOP_SERVER received, server token: 3795405b-2b32-43a8-9c24-34091b264a7a, passed token: 3795405b-2b32-43a8-9c24-34091b264a7a
+10/15/26 20:43:26: Socket received request to stop server.
+10/15/26 20:43:26: Dispatch Server: do_await_stop
+10/15/26 20:43:26: SERVER: destructor for server bound to port 7744
+10/15/26 20:43:34: Running xcd server. This server was built by gradle.
+10/15/26 20:43:34: Server was asked to start on port: '7748'
+10/15/26 20:43:34: Server is using token UUID: 'ec9cd59f-131e-479e-a59f-a91f1dfc4f64'
+10/15/26 20:43:34: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+10/15/26 20:43:34: Attempting to start server on port '7748'
+10/15/26 20:43:34: Running Dispatch Server
+10/15/26 20:43:34: Version 2.2.0
+10/15/26 20:43:37: Dispatch Server: Accepted socket connection from client
+10/15/26 20:43:37: Starting Socket connection
+10/15/26 20:43:37: EXCHANGE_TOKEN received, server token: ec9cd59f-131e-479e-a59f-a91f1dfc4f64, passed token: ec9cd59f-131e-479e-a59f-a91f1dfc4f64
+10/15/26 20:43:37: DISPATCH_HANDLER: Adding handler from function makeHandler in library xv_system_diagram
+10/15/26 20:43:37: SESSION_MGR: creating session with session uuid: '440937bd-d807-4fab-ac20-f70212d9f838' and name 'v++_compile_radar_lidar_pip'
+10/15/26 20:43:37: KERNEL_SVC: creating session with uuid: '440937bd-d807-4fab-ac20-f70212d9f838' and name 'v++_compile_radar_lidar_pip'
+10/15/26 20:43:37: GUIDANCE_SMGR: creating guidance session with uuid: '440937bd-d807-4fab-ac20-f70212d9f838' and name 'v++_compile_radar_lidar_pip'
+10/15/26 20:43:37: SYSTEM_DIAGRAM: creating session with uuid: '440937bd-d807-4fab-ac20-f70212d9f838' and name 'v++_compile_radar_lidar_pip'
+10/15/26 20:43:40: Dispatch Server: Accepted socket connection from client
+10/15/26 20:43:40: Starting Socket connection
+10/15/26 20:43:59: SESSION_MGR: closing session for UUID '440937bd-d807-4fab-ac20-f70212d9f838' with name 'v++_compile_radar_lidar_pip'
+10/15/26 20:43:59: KERNEL_SVC: closing session for UUID '440937bd-d807-4fab-ac20-f70212d9f838' with name 'v++_compile_radar_lidar_pip'
+10/15/26 20:43:59: GUIDANCE_SMGR: closing session for UUID '440937bd-d807-4fab-ac20-f70212d9f838' with name 'v++_compile_radar_lidar_pip'
+10/15/26 20:43:59: SYSTEM_DIAGRAM: closing session for UUID '440937bd-d807-4fab-ac20-f70212d9f838' with name 'v++_compile_radar_lidar_pip'
+10/15/26 20:43:59: STOP_SERVER received, server token: ec9cd59f-131e-479e-a59f-a91f1dfc4f64, passed token: ec9cd59f-131e-479e-a59f-a91f1dfc4f64
+10/15/26 20:43:59: Socket received request to stop server.
+10/15/26 20:43:59: Dispatch Server: do_await_stop
+10/15/26 20:43:59: SERVER: destructor for server bound to port 7748
+10/15/26 20:46:20: Running xcd server. This server was built by gradle.
+10/15/26 20:46:20: Server was asked to start on port: '3624'
+10/15/26 20:46:20: Server is using token UUID: 'e892958e-b95e-44f3-91b5-f64359a7fa30'
+10/15/26 20:46:20: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+10/15/26 20:46:20: Attempting to start server on port '3624'
+10/15/26 20:46:20: Running Dispatch Server
+10/15/26 20:46:20: Version 2.2.0
+10/15/26 20:46:22: Dispatch Server: Accepted socket connection from client
+10/15/26 20:46:22: Starting Socket connection
+10/15/26 20:46:22: EXCHANGE_TOKEN received, server token: e892958e-b95e-44f3-91b5-f64359a7fa30, passed token: e892958e-b95e-44f3-91b5-f64359a7fa30
+10/15/26 20:46:23: DISPATCH_HANDLER: Adding handler from function makeHandler in library xv_system_diagram
+10/15/26 20:46:23: SESSION_MGR: creating session with session uuid: 'a5194a55-ee8d-441c-9268-140132489f80' and name 'vitis-run_compile_radar_lidar_pip'
+10/15/26 20:46:23: KERNEL_SVC: creating session with uuid: 'a5194a55-ee8d-441c-9268-140132489f80' and name 'vitis-run_compile_radar_lidar_pip'
+10/15/26 20:46:23: GUIDANCE_SMGR: creating guidance session with uuid: 'a5194a55-ee8d-441c-9268-140132489f80' and name 'vitis-run_compile_radar_lidar_pip'
+10/15/26 20:46:23: SYSTEM_DIAGRAM: creating session with uuid: 'a5194a55-ee8d-441c-9268-140132489f80' and name 'vitis-run_compile_radar_lidar_pip'
+10/15/26 20:46:26: Dispatch Server: Accepted socket connection from client
+10/15/26 20:46:26: Starting Socket connection
+10/15/26 20:46:48: SESSION_MGR: closing session for UUID 'a5194a55-ee8d-441c-9268-140132489f80' with name 'vitis-run_compile_radar_lidar_pip'
+10/15/26 20:46:48: KERNEL_SVC: closing session for UUID 'a5194a55-ee8d-441c-9268-140132489f80' with name 'vitis-run_compile_radar_lidar_pip'
+10/15/26 20:46:48: GUIDANCE_SMGR: closing session for UUID 'a5194a55-ee8d-441c-9268-140132489f80' with name 'vitis-run_compile_radar_lidar_pip'
+10/15/26 20:46:48: SYSTEM_DIAGRAM: closing session for UUID 'a5194a55-ee8d-441c-9268-140132489f80' with name 'vitis-run_compile_radar_lidar_pip'
+10/15/26 20:46:48: STOP_SERVER received, server token: e892958e-b95e-44f3-91b5-f64359a7fa30, passed token: e892958e-b95e-44f3-91b5-f64359a7fa30
+10/15/26 20:46:48: Socket received request to stop server.
+10/15/26 20:46:48: Dispatch Server: do_await_stop
+10/15/26 20:46:48: SERVER: destructor for server bound to port 3624
